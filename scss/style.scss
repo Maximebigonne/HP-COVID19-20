@@ -1,0 +1,23 @@
+@import "./fonts.scss";
+@import "./_base.scss";
+@import "./form.scss";
+
+
+@media only screen and (max-width: 767px){
+	@import "./mobile.scss";
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+	@import "./tablet.scss";
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1350px) {
+	@import "./desktop.scss";
+}
+
+@media only screen and (min-width: 1351px) {
+	@import "./desktop-large.scss";
+}
+
+
+
