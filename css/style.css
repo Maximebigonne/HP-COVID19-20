@@ -929,7 +929,7 @@ body input[type=button]:hover {
   }
   .journey .inner {
     margin: 0px auto;
-    width: 1560px;
+    width: 1300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -2141,7 +2141,7 @@ body input[type=button]:hover {
   }
   .journey .inner {
     margin: 0px auto;
-    width: 1560px;
+    width: 1400px;
     display: flex;
     align-items: center;
     justify-content: space-between;
