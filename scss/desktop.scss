@@ -57,7 +57,7 @@
                     font-weight: 600;
                     font-size: 16.2887px;
                     color: white;
-                    background-color: #0099FF;
+                    background-color: $green;
                     padding: 10px 30px 10px 30px;
                     border-radius: 4px;
                     text-decoration: none;
@@ -132,11 +132,9 @@
 
     .inner{
         margin: 0px auto;
-        width: 1560px;
+        width: 1320px;
         display: flex;
         align-items: center;
-        justify-content: space-between;
-        padding-right: 100px;
 
         .container-visuel{
             width: 850px;
@@ -144,7 +142,7 @@
         }
 
         .text{
-            width: 433px;
+            width: 470px;
             height: auto;
 
             .picto{
@@ -159,7 +157,7 @@
 
             h3{
                 margin-top: 40px;
-                width: 290px;
+                width: 470px;
                 margin-bottom: 40px;
                 font-family: $website-font-semibold;
                 font-size: 45px;
@@ -239,7 +237,7 @@
 
 .use-cases{
     width: 100%;
-    padding: 120px 0px 120px 0px;
+    padding: 120px 0px 200px 0px;
 
     h2{
         text-align: center;
@@ -339,7 +337,7 @@
             a{
                 color: #0099FF;
                 text-decoration: none;
-                font-family: $website-font;
+                font-family: $website-font-semibold;
                 font-size: 18px;
                 line-height: 18px;
                 position: absolute;
@@ -356,18 +354,18 @@
 
 .messaging{
     width: 100%;
-    padding: 120px 0px 120px 0px;
+    padding: 0px 0px 150px 0px;
 
     .inner{
         margin: 0px auto;
-        width: 1291px;
+        width: 1233px;
         min-height: 300px;
         display: flex;
         align-items: center;
 
         .container-visuel{
-            width: 780px;
-            height: 550px;
+            width: 682px;
+            height: 435px;
         }
 
         .text{
@@ -428,7 +426,7 @@
 .community{
 
     width: 100%;
-    padding: 120px 0px 120px 0px;
+    padding: 0px 0px 120px 0px;
     
     h2{
         text-align: center;
@@ -439,12 +437,12 @@
         font-size: 50px;
         line-height: 60px;
         color: #303140;
-        margin-bottom: 80px;
+        margin-bottom: 50px;
     }
 
     .inner{
         margin: 0px auto;
-        width: 1322px;
+        width: 1215px;
         display: flex;
         align-items: center;
 
@@ -491,7 +489,6 @@
                     text-align: center;
                     box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.25);
                     position: relative;
-                    cursor: pointer;
 
                     .expert-photo{
                         position: absolute;
@@ -554,7 +551,7 @@
         }
 
         .text{
-            width: 368px;
+            width: 342px;
             height: auto;
             padding-top: 15px;
 
@@ -586,7 +583,7 @@
             }
 
             a{
-                width: 335px;
+                width: 276px;
                 font-family: $website-font-semibold;
                 font-size: 18px;
                 line-height: 18px;
@@ -607,19 +604,20 @@
 
 .analytics{
     width: 100%;
-    padding: 120px 0px 120px 0px;
+    padding: 0px 0px 120px 0px;
     
 
     .inner{
         margin: 0px auto;
-        width: 1320px;
+        width: 1195px;
         display: flex;
         align-items: center;
 
         .container-visuel{
-            width: 780px;
-            height: 550px;
-            margin-right: 60px;
+            width: 549px;
+            height: 580px;
+            margin-right: 150px;
+            
         }
 
         .text{

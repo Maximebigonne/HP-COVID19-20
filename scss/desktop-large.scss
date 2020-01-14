@@ -1,3 +1,60 @@
+.menu-new{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    .menu-inner{
+        width: 1200px;
+        height: 65px;
+        background-color: #FFFFFF;
+        position: fixed;
+        top: 0;
+        border-radius: 0px 0px 10px 10px;
+        z-index: 999;
+        padding: 0px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .logo{
+            height: 29px;
+            width: 121px;
+        }
+
+        .links{
+            display: flex;
+            align-items: center;
+            
+            div{
+                margin: 0px 10px;
+                font-family: $website-font;
+                color: #707689;
+            }
+
+            img{
+                width: 40px;
+                height: 40px;
+                margin-left: 20px;
+            }
+
+            a{
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 16.2887px;
+                color: white;
+                background-color: $green;
+                padding: 10px 30px 10px 30px;
+                border-radius: 4px;
+                text-decoration: none;
+                margin-left: 20px;
+            }
+        }
+    }
+}
+
 .start{
     background-image: url('./../images/product_3.png');
     background-repeat: no-repeat;
