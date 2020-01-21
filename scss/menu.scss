@@ -1,0 +1,193 @@
+@import "./variable.scss";
+
+.menu{
+
+    width: 100%;
+    position: fixed;
+    top: 10px;
+    z-index: 999999;
+
+    @media #{$desktop-xl} {
+        top: 0px;
+    }
+
+    .active{
+        display: block !important;
+    }
+
+    .menu-inner-mobile{
+        display: none;
+        width: 100%;
+        height: auto;
+        background-color: white;
+        padding: 20px 20px;
+
+        .item-title{
+            font-family: $website-font-bold;
+            font-size: 20px;
+            color: #303140;
+            margin-bottom: 3px;
+            text-align: center;
+        }
+        
+        .item{
+            font-family: $website-font;
+            font-size: 13px;
+            color: #707689;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 5px;
+        }
+
+        .separator{
+            width: 34px;
+            height: 0px;
+            border: 1px solid #D0D9E2;
+            margin: 0px auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+
+
+
+    .menu-inner{
+        width: 1000px;
+
+        @media #{$desktop-xl} {
+            width: 100%;
+            border-radius: 0px;
+        } 
+
+        height: auto;
+        padding: 10px 30px 10px 30px;
+        background-color: white;
+        margin: 0px auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 10px 10px 10px 10px;
+        box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.25);
+
+        .logo{
+            width: 121px;
+
+            img{
+                max-width: 121px;
+            }
+
+            @media #{$desktop-xl} {
+                width: 80px;
+                img{
+                    max-width: 80px;
+                }
+            } 
+        }
+
+        .right{
+
+            display: flex;
+            align-items: center;
+
+            .items{
+                display: flex;
+                align-items: center;
+                
+                @media #{$desktop-xl} {
+                    display: none;
+                } 
+
+                div{ 
+                    width: 100px;
+                    height: auto;
+                    text-align: center;
+
+                    a{
+                        font-family: $website-font;
+                        font-size: 15px;
+                        color: #707689;
+                    }
+
+                    a:hover{
+                        font-family: $website-font-bold;
+                        color: #303140;
+                    }
+                }
+            }
+
+            .ctas{
+
+                display: flex;
+                align-items: center;
+
+
+                .login, .demo{
+                    cursor: pointer;
+                }
+
+                .navbar-toggle{
+                    display: none;
+
+                    @media #{$desktop-xl} {
+                        display: block;
+                        width: 26px;
+                        margin-left: 20px;
+
+                        i{
+                            font-size: 20px;
+                            color: #707689;
+                            cursor: pointer;
+                        }
+                    } 
+                }
+
+                .login:hover{
+                    border: 1px solid #303140;
+                    color: #303140;
+                }
+
+                .demo:hover{
+                    transform: scale(1.05);
+                    transition: 0.2s;
+                }
+
+                .login{
+                    border: 1px solid #D0D9E2;
+                    border-radius: 5px;
+                    margin-right: 17px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px 25px;
+                    font-family: $website-font;
+                    letter-spacing: 0.005em;
+                    font-size: 13.4079px;
+                    color: #707689;
+
+                    @media #{$desktop-xl} {
+                        display: none;
+                    } 
+                }
+
+
+                .demo{
+                    background-color: #1BC74E;
+                    border: 1px solid #1BC74E;;
+                    font-size: 13.4079px;
+                    color: white;
+                    font-family: $website-font;
+                    letter-spacing: 0.005em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    padding: 15px 30px;
+                    transition: 0.2s;
+                }
+
+            }
+
+        }
+    }
+}

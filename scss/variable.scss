@@ -1,0 +1,548 @@
+// COLORS
+
+$white:#ffffff;
+$main-color: #000000;
+$secondary-color:#1BC74E;
+$btn:#ff9600;
+$btn-hover:#f1c40f;
+$bg-grey:#f4f4f4;
+
+
+
+
+$green: #1BC74E;
+$bleu: #0099FF;
+$yellow: #FFD940;
+$black: #34393F;
+$grey: #707689;
+
+
+/*SECONDARY*/
+$greylight: #EAEEF2;
+$greenlight: #1BC74E;
+$bluelight: #E2F4FF;
+$yellowlight: #FFFBE9;
+$bluedark: #005DA4;
+$red: #FF4F5C;
+
+// MEDIA QUERIES
+
+$desktop-xxl:  #{"only screen and (max-width:1351px)"};
+$desktop-xl:  #{"only screen and (max-width:1025px)"};
+$desktop:     #{"only screen and (max-width:991px)"};
+$tablet:      #{"only screen and (max-width:767px)"};
+$mobile:      #{"only screen and (max-width:650px)"};
+$highdensity: #{"only screen and (max-width:480px)"};
+$lowdensity: #{"only screen and (max-width:380px)"};
+$lastdensity: #{"only screen and (max-width:320px)"};
+
+
+$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+$website-font:      'proxima-regular', $sans-serif;
+$website-font-bold: 'proxima-bold', $sans-serif;
+$website-font-semibold: 'proxima-semibold', $sans-serif;
+$website-font-extrabold: 'proxima-extrabold', $sans-serif;
+$website-font-light:      'proxima-light', $sans-serif;
+$website-italic: 'proxima-regular-italic', $sans-serif;
+
+//FLEX
+@mixin dFlex(){
+  display:flex;
+  display:-webkit-flex; 
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap; 
+}
+
+// FLEX CENTER HORIZONTAL
+@mixin dCentercenter(){
+  display:flex;
+  display:-webkit-flex; 
+  flex-wrap:wrap;
+  -webkit-flex-wrap:wrap;         
+  justify-content:center;
+  -webkit-justify-content:center; 
+}
+
+// FLEX VERTICAL CENTER
+@mixin dVerticalcenter(){
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;  
+}
+
+// FLEX VERTICAL HORIZONTAL ET VERTICAL
+@mixin dflexTotal(){
+  display: -ms-flexbox;
+   display: -webkit-box;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-flex-wrap: wrap;
+  justify-content: center;
+  -webkit-justify-content: center;
+}
+
+//BORDER RADIUS KIT
+@mixin border-radius($radius){
+     -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+     border-radius: $radius;
+}
+//MULTIPLE BORDER RADIUS KIT
+@mixin borderRadiusx4($radiusTop, $radiusRight, $radiusBottom, $radiusLeft){
+     -webkit-border-radius: $radiusTop $radiusRight $radiusBottom $radiusLeft;
+     -moz-border-radius: $radiusTop $radiusRight $radiusBottom $radiusLeft;
+     border-radius: $radiusTop $radiusRight $radiusBottom $radiusLeft;
+}
+
+//TRANSITION KIT
+@mixin transition($type, $rapidity){
+  -moz-transition: all $rapidity $type;
+  -o-transition: all $rapidity $type;
+  -webkit-transition: all $rapidity $type;
+  transition: all $rapidity $type;  
+}
+
+//TRANSITION WIDTH KIT
+@mixin transition-width($type, $rapidity){
+  -moz-transition: width $rapidity $type;
+  -o-transition: width $rapidity $type;
+  -webkit-transition: width $rapidity $type;
+  transition: width $rapidity $type;  
+}
+
+// TRANSFORM
+@mixin transform($degrees){
+  -moz-transform: rotate($degrees);
+  -o-transform: rotate($degrees);
+  -webkit-transform: rotate($degrees);
+  transform: rotate($degrees);  
+}
+// BOX SHADOW KIT
+@mixin box-shadow($string: 0 1px 3px 0 rgba(0, 73, 103, 0.2)){
+  -webkit-box-shadow: $string;
+  -moz-box-shadow:    $string;
+  box-shadow:         $string;
+}
+
+// HEIGHT LINEHEIGHT SIMILAIRES
+@mixin height-lineheight-sim($height-lineheight){
+  height:$height-lineheight;
+  line-height: $height-lineheight;
+}
+// HEIGHT + LINEHEIGHT
+@mixin height-lineheight($valHeight, $vallineHeight){
+  height:$valHeight;
+  line-height: $vallineHeight;
+}
+// WIDTH + LINEHEIGHT
+@mixin width-lineheight($valWidth, $vallineHeight){
+  width:$valWidth;
+  line-height: $vallineHeight;
+}
+// WIDTH + HEIGHT
+@mixin width-height($valWidth, $valHeight){
+  width:$valWidth;
+  height:$valHeight;
+}
+// WIDTH + HEIGHT SIMILARITIES
+@mixin width-height-sim($width-height-sim){
+  width:$width-height-sim;
+  height:$width-height-sim;
+}
+// WIDTH + HEIGHT + LINE-HEIGHT
+@mixin width-heightlineheight($valWidth, $valHeight, $vallineHeight){
+  width:$valWidth;
+  height:$valHeight;
+  line-height: $vallineHeight;
+}
+// WIDTH + HEIGHT/LINE-HEIGHT SIMILARITIES
+@mixin width-height-lineheight-sim($valWidth, $height-lineheight){
+  width:$valWidth;
+  @include height-lineheight-sim ($height-lineheight);
+}
+
+// PADDING LEFT = PADDING RIGHT
+@mixin padding-sim($padding-sim){
+  padding-left:$padding-sim;
+  padding-right: $padding-sim;
+}
+
+// MARGIN LEFT = MARGIN RIGHT
+@mixin margin-sim($margin-sim){
+  margin-left:$margin-sim;
+  margin-right: $margin-sim;
+}
+
+// BEFORE/AFTER : POSITION ABSOLUE + CONTENT
+  @mixin content-abs(){
+  position:absolute;
+  content:'';
+}
+
+// CALCUL LARGEUR PAR 100
+// exemple : ((53px))
+@mixin widthCalc($widthCalc){
+  width:calc#{"(100% - #{$widthCalc})"};
+  width:-moz-calc#{"(100% - #{$widthCalc})"};
+  width:-webkit-calc#{"(100% - #{$widthCalc})"};
+  width:#{"calc(100% - #{$widthCalc})"};
+  width:#{"-moz-calc(100% - #{$widthCalc})"};
+  width:#{"-webkit-calc(100% - #{$widthCalc})"};
+}
+// CALCUL LARGEUR PAR 50
+// exemple : ((53px))
+@mixin widthCalc50($widthCalc){
+  width:calc#{"(50% - #{$widthCalc})"};
+  width:-moz-calc#{"(50% - #{$widthCalc})"};
+  width:-webkit-calc#{"(50% - #{$widthCalc})"};
+  width:#{"calc(50% - #{$widthCalc})"};
+  width:#{"-moz-calc(50% - #{$widthCalc})"};
+  width:#{"-webkit-calc(50% - #{$widthCalc})"};
+}
+// CALCUL LARGEUR PAR 20
+// exemple : ((53px))
+@mixin widthCalc20($widthCalc){
+  width:calc#{"(20% - #{$widthCalc})"};
+  width:-moz-calc#{"(20% - #{$widthCalc})"};
+  width:-webkit-calc#{"(20% - #{$widthCalc})"};
+  width:#{"calc(20% - #{$widthCalc})"};
+  width:#{"-moz-calc(20% - #{$widthCalc})"};
+  width:#{"-webkit-calc(20% - #{$widthCalc})"}; 
+}
+// CALCUL LARGEUR PAR 25
+// exemple : ((53px))
+@mixin widthCalc25($widthCalc){
+  width:calc#{"(25% - #{$widthCalc})"};
+  width:-moz-calc#{"(25% - #{$widthCalc})"};
+  width:-webkit-calc#{"(25% - #{$widthCalc})"};
+  width:#{"calc(25% - #{$widthCalc})"};
+  width:#{"-moz-calc(25% - #{$widthCalc})"};
+  width:#{"-webkit-calc(25% - #{$widthCalc})"}; 
+}
+// CALCUL LARGEUR PAR 33
+// exemple : ((53px))
+@mixin widthCalc33($widthCalc){
+  width:calc#{"(33.3% - #{$widthCalc})"};
+  width:-moz-calc#{"(33.3% - #{$widthCalc})"};
+  width:-webkit-calc#{"(33.3% - #{$widthCalc})"};
+  width:#{"calc(33.3% - #{$widthCalc})"};
+  width:#{"-moz-calc(33.3% - #{$widthCalc})"};
+  width:#{"-webkit-calc(33.3% - #{$widthCalc})"};
+  
+}
+// CALCUL LARGEUR PAR 50
+// exemple : ((53px))
+@mixin widthCalc50($widthCalc){
+  width:calc#{"(50% - #{$widthCalc})"};
+  width:-moz-calc#{"(50% - #{$widthCalc})"};
+  width:-webkit-calc#{"(50% - #{$widthCalc})"};
+  width:#{"calc(50% - #{$widthCalc})"};
+  width:#{"-moz-calc(50% - #{$widthCalc})"};
+  width:#{"-webkit-calc(50% - #{$widthCalc})"};
+  
+}
+// VARIABLE BOTTOM (ne pas forcement s'en servir dans CSS)
+// ex : (10px)
+@mixin abs-bottom($abs-bottom){
+  bottom:$abs-bottom;  
+}
+
+// VARIABLE TOP (ne pas forcement s'en servir dans CSS)
+// ex : (10px)
+@mixin abs-top($abs-top){
+  top:$abs-top;  
+}
+
+// VARIABLE LEFT (ne pas forcement s'en servir dans CSS)
+// ex : (10px)
+@mixin abs-left($abs-left){
+  left:$abs-left;  
+}
+
+// VARIABLE RIGHT (ne pas forcement s'en servir dans CSS)
+// ex : (10px)
+@mixin abs-right($abs-right){
+  right:$abs-right;  
+}
+
+// VARIABLE CALCUL BOTTOM PAR 50 (ne pas forcement s'en servir dans CSS)
+// ex : ((53px))
+@mixin abs-bottomcalc($abs-bottomcalc){
+  bottom:calc#{"(50% - #{$abs-bottomcalc})"};
+  bottom:-moz-calc#{"(50% - #{$abs-bottomcalc})"};
+  bottom:-webkit-calc#{"(50% - #{$abs-bottomcalc})"};
+  bottom:#{"calc(50% - #{$abs-bottomcalc})"};
+  bottom:#{"-moz-calc(50% - #{$abs-bottomcalc})"};
+  bottom:#{"-webkit-calc(50% - #{$abs-bottomcalc})"};
+}
+
+// VARIABLE CALCUL TOP PAR 50 (ne pas forcement s'en servir dans CSS)
+// ex : ((53px))
+@mixin abs-topcalc($abs-topcalc1){
+  top:calc(50% - #{$abs-topcalc1});
+top:-moz-calc#{"(50% - #{$abs-topcalc1})"};
+  top:-webkit-calc#{"(50% - #{$abs-topcalc1})"};
+  top:#{"calc(50% - #{$abs-topcalc1})"};
+  top:#{"-moz-calc(50% - #{$abs-topcalc1})"};
+  top:#{"-webkit-calc(50% - #{$abs-topcalc1})"};
+}
+
+// VARIABLE CALCUL LEFT PAR 50 (ne pas forcement s'en servir dans CSS)
+// ex : ((53px))
+@mixin abs-leftcalc($abs-leftcalc){
+  left: calc#{"(50% - #{$abs-leftcalc})"};
+  left:-moz-calc#{"(50% - #{$abs-leftcalc})"};
+  left:-webkit-calc#{"(50% - #{$abs-leftcalc})"};
+  left:#{"calc(50% - #{$abs-leftcalc})"};
+  left:#{"-moz-calc(50% - #{$abs-leftcalc})"};
+  left:#{"-webkit-calc(50% - #{$abs-leftcalc})"};
+}
+
+//VARIABLE CALCUL RIGHT PAR 50 (ne pas forcement s'en servir dans CSS)
+// ex : ((53px))
+@mixin abs-rightcalc($abs-rightcalc){
+  right:calc#{"(50% - #{$abs-rightcalc})"};
+  right:-moz-calc#{"(50% - #{$abs-rightcalc})"};
+  right:-webkit-calc#{"(50% - #{$abs-rightcalc})"};
+  right:#{"calc(50% - #{$abs-rightcalc})"};
+  right:#{"-moz-calc(50% - #{$abs-rightcalc})"};
+  right:#{"-webkit-calc(50% - #{$abs-rightcalc})"};
+}
+
+// POSITION ABSOLUTE + TOP + LEFT
+// ex : (15px, 20px)
+@mixin absolute-topleft($topAbs, $leftAbs){
+  position:absolute;
+  top:$topAbs;
+  left: $leftAbs;
+}
+// POSITION FIXED + TOP + LEFT
+// ex : (15px, 20px)
+@mixin fixed-topleft($topAbs, $leftAbs){
+  position:fixed;
+  top:$topAbs;
+  left: $leftAbs;
+}
+// POSITION FIXED + TOP + RIGHT
+// ex : (15px, 20px)
+@mixin fixed-topright($topAbs, $rightAbs){
+  position:fixed;
+  top:$topAbs;
+  right: $rightAbs;
+}
+// POSITION FIXED + BOTTOM + LEFT
+// ex : (15px, 20px)
+@mixin fixed-bottomleft($bottomAbs, $leftAbs){
+  position:fixed;
+  bottom:$bottomAbs;
+  left: $leftAbs;
+}
+//  POSITION ABSOLU + TOP + LEFT CALC
+// ex : (15px, (20px)
+@mixin absolute-topleftcontent($abs-top, $abs-leftcalc){
+  position:absolute;
+  @include abs-top ($abs-top);  
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// BEFORE/AFTER + TOP + LEFT
+// ex : (15px, 20px)
+@mixin abs-topleftcontent($abs-top, $abs-left){
+  @include content-abs();
+  @include abs-top ($abs-top);  
+  @include abs-left ($abs-left);  
+}
+
+// POSITION ABSOLUTE + TOP + RIGHT
+// ex : (15px, 20px)
+@mixin absolute-topright($abs-top, $abs-right){
+  position: absolute;
+  @include abs-top ($abs-top);  
+  @include abs-right ($abs-right);  
+}
+
+// BEFORE/AFTER + TOP + RIGHT
+// ex : (15px, 20px)
+@mixin abs-toprightcontent($abs-top, $abs-right){
+  @include content-abs();
+  @include abs-top ($abs-top);  
+  @include abs-right ($abs-right);  
+}
+// BEFORE/AFTER + TOP + LEFT CALCUL PAR 50
+// ex : ((10px),(25px))
+@mixin abs-topleftcalccontent($abs-top, $abs-leftcalc){
+  @include content-abs();
+  @include abs-top ($abs-top);  
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// POSITION ABSOLUTE + BOTTOM + LEFT
+// ex : (15px, 20px)
+@mixin absolute-bottomleft($abs-bottom, $abs-left){
+  position: absolute;
+  @include abs-bottom ($abs-bottom);  
+  @include abs-left ($abs-left);  
+}
+
+// POSITION ABSOLUTE + BOTTOM + RIGHT
+// ex : (15px, 20px)
+@mixin absolute-bottomright($abs-bottom, $abs-right){
+  position: absolute;
+  @include abs-bottom ($abs-bottom);  
+  @include abs-right ($abs-right);  
+}
+
+// BEFORE/AFTER + BOTTOM + RIGHT
+// ex : (15px, 20px)
+@mixin abs-bottomrightcontent($abs-bottom, $abs-right){
+  @include content-abs();
+  @include abs-bottom ($abs-bottom);  
+  @include abs-right ($abs-right);  
+}
+
+// BEFORE/AFTER + BOTTOM + LEFT CALC
+// ex : (15px, (20px)
+@mixin abs-bottomleftcontent($abs-bottom, $abs-leftcalc){
+  @include content-abs();
+  @include abs-bottom ($abs-bottom);  
+  @include abs-leftcalc ($abs-leftcalc);
+}
+//  POSITION ABSOLU + BOTTOM + LEFT CALC
+// ex : (15px, (20px)
+@mixin absolute-bottomleftcontent($abs-bottom, $abs-leftcalc){
+  position:absolute;
+  @include abs-bottom ($abs-bottom);  
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// BEFORE/AFTER + BOTTOM + LEFT
+// ex : (15px, (20px)
+@mixin content-bottomleftnocalc($abs-bottom, $abs-left){
+  @include content-abs();
+  @include abs-bottom ($abs-bottom);  
+  @include abs-left ($abs-left);  
+}
+
+// BEFORE/AFTER + TOP CALCUL PAR 50 + LEFT CALCUL PAR 50
+// ex : ((10px),(25px))
+@mixin abs-topcalcleftcalccontent($abs-topcalc1, $abs-leftcalc){
+  @include content-abs();
+  @include abs-topcalc ($abs-topcalc1);
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// POSITION ABSOLU + TOP CALCUL PAR 50 + LEFT CALCUL PAR 50
+// ex : ((10px),(25px))
+@mixin absolute-topcalcleftcalc($abs-topcalc, $abs-leftcalc){
+  position: absolute;
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// POSITION ABSOLU + BOTTOM CALCUL PAR 50 + LEFT CALCUL PAR 50
+// ex : ((10px),(25px))
+@mixin absolute-bottomcalcleftcalc($abs-bottomcalc, $abs-leftcalc){
+  position: absolute;
+  @include abs-bottomcalc ($abs-bottomcalc);
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// BEFORE/AFTER + TOP CALCUL PAR 50 + RIGHT CALCUL PAR 50
+// ex : ((10px),(25px))
+@mixin abs-topcalcrightcalccontent($abs-topcalc, $abs-rightcalc){
+  @include content-abs();
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-rightcalc ($abs-rightcalc);
+}
+
+// BEFORE/AFTER + TOP ABSOLUE + LEFT CALCUL PAR 50
+// ex : (0, (30px));
+@mixin abs-topleftcalccontent($abs-top, $abs-leftcalc){
+  @include content-abs();
+  @include abs-top ($abs-top);
+  @include abs-leftcalc ($abs-leftcalc);
+}
+
+// BEFORE/AFTER + TOP CALCUL PAR 50 + RIGHT ABSOLUTE
+// ex : ((30px), 0);
+@mixin abs-topcalcrightabs($abs-topcalc, $abs-right){
+  @include content-abs();
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-right ($abs-right);
+}
+
+// BEFORE/AFTER + TOP CALCUL PAR 50 + LEFT ABSOLUTE
+// ex : ((30px), 0);
+@mixin abs-topcalcleftabs($abs-topcalc, $abs-left){
+  @include content-abs();
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-left ($abs-left);
+}
+
+// ABSOLU + TOP CALCUL PAR 50 + LEFT ABSOLUTE
+// ex : ((30px), 0);
+@mixin absolute-topcalcleftabs($abs-topcalc, $abs-left){
+  position: absolute;
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-left ($abs-left);
+}
+
+// ABSOLU + TOP CALCUL PAR 50 + RIGHT ABSOLUTE
+// ex : ((30px), 0);
+@mixin absolute-topcalcrighttabs($abs-topcalc, $abs-right){
+  position: absolute;
+  @include abs-topcalc ($abs-topcalc);
+  @include abs-right ($abs-right);
+}
+
+// ELLIPSIS OVERFLOW
+@mixin ellipsis-text(){
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+@mixin bgCover(){
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+// OBJECTFIT
+@mixin object-fit($valWidth, $valHeight){
+  object-fit:cover;
+  width:$valWidth;
+  height:$valHeight;
+}
+
+@mixin border($border-color){
+  border-width: 1px;
+  border-style:solid;
+  border-color:$border-color;
+}
+
+//TRANSITION KIT
+@mixin transition($kind, $rapidity, $type){
+  -moz-transition: $kind $rapidity $type;
+  -o-transition: $kind $rapidity $type;
+  -webkit-transition: $kind $rapidity $type;
+  transition: $kind $rapidity $type;
+  -ms-transition: $kind $rapidity $type;  
+}
+
+//TRANSITION WIDTH KIT
+@mixin transition-width($type, $rapidity){
+  -moz-transition: width $rapidity $type;
+  -o-transition: width $rapidity $type;
+  -webkit-transition: width $rapidity $type;
+
+}
