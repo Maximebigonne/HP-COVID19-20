@@ -92,10 +92,64 @@
             .items{
                 display: flex;
                 align-items: center;
+                position: relative;
+
+                .hide-menu{
+                    display: none !important;
+                }
+
+                .hightlight{
+                    font-family: $website-font-bold;
+                    color: #303140;
+
+                    i{
+                        transform: rotate(90deg);
+                        transition: 0.2s;
+                    }
+
+                }
+
+                .industry-pages{
+                    position: absolute;
+                    width: 135px;
+                    top: 25px;
+                    left: -20px;
+                    background-color: white;
+                    font-family: $website-font;
+                    font-size: 13px;
+                    color: #707689;
+                    text-decoration: none;
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 10px;
+                    padding-bottom: 0px;
+                    border-radius: 10px;
+
+                    div{
+                        width: 100% !important;
+                        margin-bottom: 10px;
+                        cursor: pointer;
+                    }
+
+                    div:hover{
+                        font-family: $website-font-bold;
+                        color: #303140;
+                    }
+                }
                 
                 @media #{$desktop-xl} {
                     display: none;
-                } 
+                }
+                
+                div:nth-of-type(1){
+                    a{
+                        i{
+                            font-size: 13px;
+                            padding-left: 0px;
+                            transition: 0.2s;
+                        }
+                    }                    
+                }
 
                 div{ 
                     width: 100px;
@@ -106,7 +160,10 @@
                         font-family: $website-font;
                         font-size: 15px;
                         color: #707689;
+                        text-decoration: none;
                     }
+
+
 
                     a:hover{
                         font-family: $website-font-bold;

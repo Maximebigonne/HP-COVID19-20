@@ -28,7 +28,7 @@
   
             <div class="items">
               <div>
-                <a href="#">Solutions</a>
+                <a id="solution-item" href="#">Solutions <i class="fas fa-caret-right"></i> </a>
               </div>
               <div>
                 <a href="#">Platform tour</a>
@@ -36,6 +36,11 @@
               <div>
                 <a href="#">Vision</a>
               </div>
+                <div id="submenu" class="industry-pages hide-menu">
+                    <div>Consumer products</div>
+                    <div>Consumer services</div>
+                    <div>Travel & Tourism</div>
+                </div>
             </div>
   
             <div class="ctas">
@@ -214,6 +219,8 @@
         </div>
     </section>
 
+    <div class="separator"></div>
+
     <section class="community">
 
         <h2>
@@ -227,9 +234,9 @@
                         <img src="./images/expert/top_amelie.png" alt="">
                         <img class="logo" src="./images/logos/cdiscount.png" alt="">
                         <div class="stat">
-                            <span>1.300</span>
+                            <span>1,300</span>
                             <p>
-                                of visitors are advised each month on average
+                                visitors are advised each month on average
                             </p>
                         </div>
                         <div class="expert-photo">
@@ -244,7 +251,7 @@
                         <div class="stat">
                             <span>92.5%</span>
                             <p>
-                                Customer Satisfaction
+                                Customer satisfaction
                             </p>
                         </div>
                         <div class="expert-photo">
@@ -276,14 +283,16 @@
                     An enthusiastic ibbü expert community
                 </h3>
                 <h4>
-                    ibbu experts can advise and convert your prospects, whilst delivering a human customer experience with 24/7 availability.
+                    ibbü experts can advise and convert your prospects, whilst delivering a human customer experience with 24/7 availability.
                 </h4>
                 <a href="#">
-                   <img src="./images/arrow.png" alt="">12% average conversion rate after a conversation 
+                   <img src="./images/arrow.png" alt="">34% average conversion rate after a conversation 
                 </a>
             </div>
         </div>
     </section>
+
+    <div class="separator"></div>
 
     <section class="messaging">
         <div class="inner">
@@ -308,12 +317,14 @@
         </div>
     </section>
 
+    <div class="separator"></div>
+
     <section class="analytics">
         <div class="inner">
             <div class="container-visuel fadeImg">
-                <img src="./images/product-caroussel/Produit_features 3a.png" alt="">
-                <img style="display: none;" src="./images/product-caroussel/Produit_features 3b.png" alt="">
-                <img style="display: none;" src="./images/product-caroussel/Produit_features 3c.png.png" alt="">
+                <div id="pic-1" class="illu"></div>
+                <div id="pic-2" class="illu" style="display: none;"></div>
+                <div id="pic-3" class="illu" style="display: none;"></div>
             </div>
             <div class="text">
                 <div class="picto">
@@ -451,6 +462,17 @@
         })
     </script>
 
+    <script>
+        let submenu = document.getElementById('submenu');
+        let solutionItem = document.getElementById('solution-item')
+
+        solutionItem.addEventListener('click', function () {
+            submenu.classList.toggle('hide-menu');
+            solutionItem.classList.toggle('hightlight');
+        })
+
+    </script>
+
     <script type="text/javascript">
         $next = 1;			// fixed, please do not modfy;
         $current = 0;		// fixed, please do not modfy;
@@ -463,14 +485,14 @@
             //NOTE : img should with css: absolute;
             //NOTE : img Width & Height can change by you;
             $('.fadeImg').css('position','relative');
-            $('.fadeImg img').css({'position':'absolute','width':'549px','height':'580px'});
+            $('.fadeImg .illu').css({'position':'absolute','width':'100%','height':'100%'});
     
             nextFadeIn();
         });
     
         function nextFadeIn(){
             //make image fade in and fade out at one time, without splash vsual;
-            $('.fadeImg img').eq($current).delay($interval).fadeOut($fadeTime)
+            $('.fadeImg .illu').eq($current).delay($interval).fadeOut($fadeTime)
             .end().eq($next).delay($interval).hide().fadeIn($fadeTime, nextFadeIn);
                 
             // if You have 5 images, then (eq) range is 0~4 

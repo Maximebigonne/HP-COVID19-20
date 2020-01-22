@@ -82,11 +82,53 @@
 .menu .menu-inner .right .items {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.menu .menu-inner .right .items .hide-menu {
+  display: none !important;
+}
+.menu .menu-inner .right .items .hightlight {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #303140;
+}
+.menu .menu-inner .right .items .hightlight i {
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+.menu .menu-inner .right .items .industry-pages {
+  position: absolute;
+  width: 135px;
+  top: 25px;
+  left: -20px;
+  background-color: white;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #707689;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+.menu .menu-inner .right .items .industry-pages div {
+  width: 100% !important;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.menu .menu-inner .right .items .industry-pages div:hover {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #303140;
 }
 @media only screen and (max-width:1025px) {
   .menu .menu-inner .right .items {
     display: none;
   }
+}
+.menu .menu-inner .right .items div:nth-of-type(1) a i {
+  font-size: 13px;
+  padding-left: 0px;
+  transition: 0.2s;
 }
 .menu .menu-inner .right .items div {
   width: 100px;
@@ -97,6 +139,7 @@
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   color: #707689;
+  text-decoration: none;
 }
 .menu .menu-inner .right .items div a:hover {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;

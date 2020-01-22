@@ -273,11 +273,53 @@ body input[type=button]:hover {
 .menu .menu-inner .right .items {
   display: flex;
   align-items: center;
+  position: relative;
+}
+.menu .menu-inner .right .items .hide-menu {
+  display: none !important;
+}
+.menu .menu-inner .right .items .hightlight {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #303140;
+}
+.menu .menu-inner .right .items .hightlight i {
+  transform: rotate(90deg);
+  transition: 0.2s;
+}
+.menu .menu-inner .right .items .industry-pages {
+  position: absolute;
+  width: 135px;
+  top: 25px;
+  left: -20px;
+  background-color: white;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  color: #707689;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+  padding-bottom: 0px;
+  border-radius: 10px;
+}
+.menu .menu-inner .right .items .industry-pages div {
+  width: 100% !important;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.menu .menu-inner .right .items .industry-pages div:hover {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #303140;
 }
 @media only screen and (max-width:1025px) {
   .menu .menu-inner .right .items {
     display: none;
   }
+}
+.menu .menu-inner .right .items div:nth-of-type(1) a i {
+  font-size: 13px;
+  padding-left: 0px;
+  transition: 0.2s;
 }
 .menu .menu-inner .right .items div {
   width: 100px;
@@ -288,6 +330,7 @@ body input[type=button]:hover {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   color: #707689;
+  text-decoration: none;
 }
 .menu .menu-inner .right .items div a:hover {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -520,17 +563,48 @@ body input[type=button]:hover {
   cursor: pointer;
 }
 
+/*SECONDARY*/
 .start {
   background-image: url("./../images/product_3.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: white;
   height: 810px;
+}
+@media only screen and (max-width:1025px) {
+  .start {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/header-tablet-3.png");
+    background-position: top;
+    height: auto;
+  }
+}
+@media only screen and (max-width:650px) {
+  .start {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Header-mobile.png");
+  }
 }
 .start .inner {
   height: 100%;
   width: 1200px;
   margin: 0px auto;
   position: relative;
+}
+@media only screen and (max-width:1251px) {
+  .start .inner {
+    width: 1000px;
+  }
+}
+@media only screen and (max-width:1025px) {
+  .start .inner {
+    width: 600px;
+    height: 1245px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .start .inner {
+    width: 322px;
+    height: 1150px;
+  }
 }
 .start .inner .pop-in {
   width: 371px;
@@ -544,12 +618,43 @@ body input[type=button]:hover {
   padding-left: 30px;
   border-radius: 10.1804px;
 }
+@media only screen and (max-width:1251px) {
+  .start .inner .pop-in {
+    right: -36px;
+  }
+}
+@media only screen and (max-width:1025px) {
+  .start .inner .pop-in {
+    top: 170px;
+    right: 30px;
+    bottom: inherit;
+  }
+}
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in {
+    top: 110px;
+    width: 206px;
+    height: 103px;
+    padding-left: 14px;
+  }
+}
 .start .inner .pop-in img {
   width: 119px;
   margin-right: 20px;
 }
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in img {
+    width: 66px;
+    margin-right: 11px;
+  }
+}
 .start .inner .pop-in .text-pop-in {
   width: 175px;
+}
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in .text-pop-in {
+    width: 95px;
+  }
 }
 .start .inner .pop-in .text-pop-in h3 {
   font-family: "Open Sans";
@@ -558,6 +663,13 @@ body input[type=button]:hover {
   font-size: 21.3789px;
   line-height: 140%;
   color: #34393F;
+}
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in .text-pop-in h3 {
+    font-weight: 600;
+    font-size: 11.9056px;
+    line-height: 140%;
+  }
 }
 .start .inner .pop-in .text-pop-in h2 {
   font-family: "Open Sans";
@@ -568,6 +680,14 @@ body input[type=button]:hover {
   color: #707689;
   width: 171.03px;
   margin-bottom: 17px;
+}
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in .text-pop-in h2 {
+    font-size: 9.07096px;
+    line-height: 140%;
+    margin-bottom: 7px;
+    width: 95px;
+  }
 }
 .start .inner .pop-in .text-pop-in a {
   font-family: "Open Sans";
@@ -580,8 +700,25 @@ body input[type=button]:hover {
   border-radius: 4px;
   text-decoration: none;
 }
+@media only screen and (max-width:650px) {
+  .start .inner .pop-in .text-pop-in a {
+    font-size: 9.07096px;
+    line-height: 140%;
+    padding: 5px 17px;
+  }
+}
 .start .inner .text {
   padding-top: 273px;
+}
+@media only screen and (max-width:1025px) {
+  .start .inner .text {
+    padding-top: 0px;
+    position: absolute;
+    top: 800px;
+  }
+  .start .inner .text h3, .start .inner .text h2 {
+    text-align: center;
+  }
 }
 .start .inner .text h3 {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -597,6 +734,27 @@ body input[type=button]:hover {
   line-height: 110%;
   color: #303140;
 }
+@media only screen and (max-width:650px) {
+  .start .inner .text {
+    padding-top: 0px;
+    position: absolute;
+    top: 500px;
+    left: 0px;
+    right: 0px;
+  }
+  .start .inner .text h3, .start .inner .text h2 {
+    text-align: center;
+  }
+  .start .inner .text h3 {
+    font-size: 15px;
+    line-height: 130%;
+  }
+  .start .inner .text h2 {
+    font-size: 35px;
+    line-height: 110%;
+    width: 322px;
+  }
+}
 .start .inner .logos {
   position: absolute;
   left: 0px;
@@ -609,6 +767,30 @@ body input[type=button]:hover {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media only screen and (max-width:1025px) {
+  .start .inner .logos {
+    flex-wrap: wrap;
+    border-radius: 0px;
+    padding: 0px 0px;
+    justify-content: center;
+  }
+  .start .inner .logos img {
+    margin: 0px 20px;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .start .inner .logos {
+    flex-direction: column;
+    border-radius: 0px;
+    padding: 0px 0px;
+    justify-content: center;
+  }
+  .start .inner .logos img {
+    margin: 0px 20px;
+    margin-bottom: 40px;
+  }
 }
 .start .inner .logos img:nth-of-type(1) {
   width: 122px;
@@ -635,6 +817,11 @@ body input[type=button]:hover {
 .journey {
   width: 100%;
   padding: 120px 0px 120px 0px;
+}
+@media only screen and (max-width:1251px) {
+  .journey {
+    display: none;
+  }
 }
 .journey .inner {
   margin: 0px auto;
@@ -725,6 +912,16 @@ body input[type=button]:hover {
   width: 100%;
   padding: 120px 0px 200px 0px;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases {
+    padding: 120px 0px 120px 0px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases {
+    padding: 120px 0px 50px 0px;
+  }
+}
 .use-cases h2 {
   text-align: center;
   width: 966px;
@@ -736,12 +933,39 @@ body input[type=button]:hover {
   color: #303140;
   margin-bottom: 80px;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases h2 {
+    font-size: 44px;
+    line-height: 120%;
+    width: 683px;
+    margin-bottom: 70px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases h2 {
+    font-size: 35px;
+    line-height: 110%;
+    width: 321px;
+    margin-bottom: 65px;
+  }
+}
 .use-cases .inner {
   width: 1240px;
   margin: 0px auto;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner {
+    width: 650px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner {
+    width: 322px;
+  }
 }
 .use-cases .inner .card:hover {
   background-color: white;
@@ -756,6 +980,41 @@ body input[type=button]:hover {
 .use-cases .inner .card:hover .title h2 {
   color: white;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card:hover {
+    transform: scale(1);
+  }
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card:nth-of-type(1) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(3).png");
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card:nth-of-type(1) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(6).png");
+  }
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card:nth-of-type(2) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(4).png");
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card:nth-of-type(2) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(7).png");
+  }
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card:nth-of-type(3) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(5).png");
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card:nth-of-type(3) .visuel {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Group%20237%20(8).png");
+  }
+}
 .use-cases .inner .card {
   width: 410px;
   height: 608px;
@@ -767,6 +1026,26 @@ body input[type=button]:hover {
   cursor: pointer;
   position: relative;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card {
+    width: 690px;
+    height: 597px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.25);
+    margin-bottom: 45px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card {
+    width: 322px;
+    height: 521px;
+    padding: 15px;
+    background-color: white;
+    box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.25);
+    margin-bottom: 30px;
+  }
+}
 .use-cases .inner .card .title {
   padding: 35px 45px 36px 45px;
   border-radius: 10px;
@@ -774,6 +1053,20 @@ body input[type=button]:hover {
   margin-bottom: 40px;
   box-shadow: 0px 10px 50px #E2EAF2;
   transition: 0.3s;
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card .title {
+    padding: 30px;
+    background-color: #303140;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card .title {
+    padding: 28px;
+    background-color: #303140;
+    margin-bottom: 30px;
+  }
 }
 .use-cases .inner .card .title h2 {
   text-align: center;
@@ -785,11 +1078,49 @@ body input[type=button]:hover {
   width: 278px;
   margin: 0px auto;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card .title h2 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    width: 232px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card .title h2 {
+    width: 232px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+  }
+}
 .use-cases .inner .card .visuel {
   width: 370px;
   height: 230px;
   border-radius: 10px;
   margin-bottom: 22px;
+}
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card .visuel {
+    width: 650px;
+    height: 230px;
+    margin-bottom: 17px;
+  }
+  .use-cases .inner .card .visuel img {
+    display: none;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card .visuel {
+    width: 292px;
+    height: 182px;
+    margin-bottom: 17px;
+  }
+  .use-cases .inner .card .visuel img {
+    display: none;
+  }
 }
 .use-cases .inner .card .stat {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -805,6 +1136,13 @@ body input[type=button]:hover {
   line-height: 130%;
   color: #707689;
 }
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card .description {
+    font-size: 16px;
+    line-height: 130%;
+    width: 280px;
+  }
+}
 .use-cases .inner .card .description span {
   font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: black;
@@ -818,14 +1156,40 @@ body input[type=button]:hover {
   position: absolute;
   bottom: 20px;
 }
+@media only screen and (max-width:1251px) {
+  .use-cases .inner .card a {
+    bottom: 40px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .use-cases .inner .card a {
+    bottom: 20px;
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
 .use-cases .inner .card a img {
   width: 24px;
   margin-right: 15px;
 }
 
+@media only screen and (max-width:650px) {
+  .separator {
+    width: 300px;
+    height: 1px;
+    margin: 0px auto;
+    background-color: #D0D9E2;
+  }
+}
+
 .messaging {
   width: 100%;
   padding: 0px 0px 150px 0px;
+}
+@media only screen and (max-width:650px) {
+  .messaging {
+    padding: 50px 0px 50px 0px;
+  }
 }
 .messaging .inner {
   margin: 0px auto;
@@ -834,15 +1198,59 @@ body input[type=button]:hover {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width:1251px) {
+  .messaging .inner {
+    width: 822px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .messaging .inner {
+    width: 320px;
+    flex-direction: column;
+  }
+}
 .messaging .inner .container-visuel {
   width: 682px;
   height: 435px;
+}
+@media only screen and (max-width:1251px) {
+  .messaging .inner .container-visuel {
+    width: 400px;
+    height: 392px;
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20Feature%2002%20(1).jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .messaging .inner .container-visuel img {
+    display: none;
+  }
+}
+@media only screen and (max-width:650px) {
+  .messaging .inner .container-visuel {
+    width: 311px;
+    height: 391px;
+  }
 }
 .messaging .inner .text {
   width: 413px;
   height: auto;
   padding-top: 15px;
   margin-right: 127px;
+}
+@media only screen and (max-width:1251px) {
+  .messaging .inner .text {
+    width: 400px;
+    margin-right: 20px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .messaging .inner .text {
+    margin-right: 0px;
+    width: 322px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
 }
 .messaging .inner .text .picto {
   font-size: 28px;
@@ -862,6 +1270,22 @@ body input[type=button]:hover {
   line-height: 45px;
   color: #303140;
 }
+@media only screen and (max-width:1251px) {
+  .messaging .inner .text h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .messaging .inner .text h3 {
+    width: 100%;
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
 .messaging .inner .text h4 {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -880,14 +1304,37 @@ body input[type=button]:hover {
   align-items: center;
   text-decoration: none;
 }
+@media only screen and (max-width:650px) {
+  .messaging .inner .text a {
+    width: 322px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .messaging .inner .text a img {
   width: 24px;
   margin-right: 15px;
+}
+@media only screen and (max-width:650px) {
+  .messaging .inner .text a img {
+    width: 24px;
+    transform: rotate(90deg);
+    margin-bottom: 15px;
+  }
 }
 
 .community {
   width: 100%;
   padding: 0px 0px 120px 0px;
+}
+@media only screen and (max-width:650px) {
+  .community {
+    padding: 50px 0px 50px 0px;
+  }
 }
 .community h2 {
   text-align: center;
@@ -900,17 +1347,58 @@ body input[type=button]:hover {
   color: #303140;
   margin-bottom: 50px;
 }
+@media only screen and (max-width:1251px) {
+  .community h2 {
+    width: 824px;
+    font-size: 44px;
+    line-height: 120%;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community h2 {
+    width: 320px;
+    font-size: 35px;
+    line-height: 110%;
+  }
+}
 .community .inner {
   margin: 0px auto;
   width: 1215px;
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width:1251px) {
+  .community .inner {
+    width: 824px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community .inner {
+    width: 322px;
+    flex-direction: column-reverse;
+  }
+}
 .community .inner .container-visuel {
   width: 880px;
   height: 550px;
   margin-right: 70px;
   display: flex;
+}
+@media only screen and (max-width:1251px) {
+  .community .inner .container-visuel {
+    width: 400px;
+    height: 486px;
+    margin-right: 22px;
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Image.jpg");
+  }
+  .community .inner .container-visuel .expert-line {
+    display: none;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community .inner .container-visuel {
+    margin-right: 0px;
+  }
 }
 .community .inner .container-visuel .expert-line:nth-of-type(1) .expert-card .logo {
   width: 126px;
@@ -988,6 +1476,17 @@ body input[type=button]:hover {
   height: auto;
   padding-top: 15px;
 }
+@media only screen and (max-width:1251px) {
+  .community .inner .text {
+    width: 399px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community .inner .text {
+    width: 322px;
+    text-align: center;
+  }
+}
 .community .inner .text .picto {
   font-size: 28px;
   line-height: 36px;
@@ -1005,12 +1504,32 @@ body input[type=button]:hover {
   line-height: 45px;
   color: #303140;
 }
+@media only screen and (max-width:1251px) {
+  .community .inner .text h3 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community .inner .text h3 {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+}
 .community .inner .text h4 {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 23px;
   color: #707689;
   margin-bottom: 40px;
+}
+@media only screen and (max-width:650px) {
+  .community .inner .text h4 {
+    font-size: 16px;
+    line-height: 130%;
+  }
 }
 .community .inner .text a {
   width: 276px;
@@ -1023,14 +1542,42 @@ body input[type=button]:hover {
   align-items: center;
   text-decoration: none;
 }
+@media only screen and (max-width:1251px) {
+  .community .inner .text a {
+    width: 399px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .community .inner .text a {
+    width: 322px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .community .inner .text a img {
   width: 24px;
   margin-right: 15px;
+}
+@media only screen and (max-width:650px) {
+  .community .inner .text a img {
+    width: 24px;
+    transform: rotate(90deg);
+    margin-bottom: 15px;
+  }
 }
 
 .analytics {
   width: 100%;
   padding: 0px 0px 120px 0px;
+}
+@media only screen and (max-width:650px) {
+  .analytics {
+    padding: 50px 0px 50px 0px;
+  }
 }
 .analytics .inner {
   margin: 0px auto;
@@ -1038,15 +1585,71 @@ body input[type=button]:hover {
   display: flex;
   align-items: center;
 }
+@media only screen and (max-width:1251px) {
+  .analytics .inner {
+    width: 824px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner {
+    width: 400px;
+    flex-direction: column-reverse;
+  }
+}
 .analytics .inner .container-visuel {
   width: 549px;
   height: 580px;
   margin-right: 150px;
 }
+.analytics .inner .container-visuel .illu {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.analytics .inner .container-visuel .illu:nth-of-type(1) {
+  background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20feature%2003b.png");
+}
+.analytics .inner .container-visuel .illu:nth-of-type(2) {
+  background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20feature%2003a.png");
+}
+.analytics .inner .container-visuel .illu:nth-of-type(3) {
+  background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20feature%2003c.png");
+}
+@media only screen and (max-width:1251px) {
+  .analytics .inner .container-visuel {
+    width: 400px;
+    height: 411px;
+    margin-right: 25px;
+  }
+  .analytics .inner .container-visuel .illu:nth-of-type(1) {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20Feature%2003.jpg");
+  }
+  .analytics .inner .container-visuel .illu:nth-of-type(2) {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20Feature%2004.jpg");
+  }
+  .analytics .inner .container-visuel .illu:nth-of-type(3) {
+    background-image: url("https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/Product%20-%20Feature%2005.jpg");
+  }
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner .container-visuel {
+    margin-right: 0px;
+  }
+}
 .analytics .inner .text {
   width: 469px;
   height: auto;
   padding-top: 15px;
+}
+@media only screen and (max-width:1251px) {
+  .analytics .inner .text {
+    width: 400px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner .text {
+    text-align: center;
+  }
 }
 .analytics .inner .text .picto {
   font-size: 28px;
@@ -1066,6 +1669,23 @@ body input[type=button]:hover {
   line-height: 45px;
   color: #303140;
 }
+@media only screen and (max-width:1251px) {
+  .analytics .inner .text h3 {
+    width: 100%;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner .text h3 {
+    width: 320px;
+    font-size: 30px;
+    line-height: 30px;
+    margin: 30px auto;
+  }
+}
 .analytics .inner .text h4 {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -1073,11 +1693,22 @@ body input[type=button]:hover {
   color: #707689;
   margin-bottom: 40px;
 }
+@media only screen and (max-width:1251px) {
+  .analytics .inner .text h4 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner .text h4 {
+    width: 320px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+  }
+}
 .analytics .inner .text a {
-  width: 420px;
+  width: 388px;
   font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 18px;
-  font-weight: 600;
   line-height: 18px;
   color: #0099FF;
   letter-spacing: 0.005em;
@@ -1085,9 +1716,28 @@ body input[type=button]:hover {
   align-items: center;
   text-decoration: none;
 }
+@media only screen and (max-width:650px) {
+  .analytics .inner .text a {
+    width: 322px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0px auto;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}
 .analytics .inner .text a img {
   width: 24px;
   margin-right: 15px;
+}
+@media only screen and (max-width:650px) {
+  .analytics .inner .text a img {
+    width: 24px;
+    transform: rotate(90deg);
+    margin-bottom: 15px;
+  }
 }
 
 .cta-area {
@@ -1096,11 +1746,28 @@ body input[type=button]:hover {
   padding: 120px 0px 120px 0px;
   border-radius: 20px 20px 0px 0px;
 }
+@media only screen and (max-width:1251px) {
+  .cta-area {
+    padding: 100px 0px 100px 0px;
+  }
+}
+@media only screen and (max-width:1251px) {
+  .cta-area {
+    padding: 70px 0px 70px 0px;
+  }
+}
 .cta-area .inner {
   width: 939px;
   margin: 0px auto;
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width:1251px) {
+  .cta-area .inner {
+    width: 433px;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .cta-area .inner h3 {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -1108,6 +1775,23 @@ body input[type=button]:hover {
   line-height: 60px;
   color: white;
   width: 627px;
+}
+@media only screen and (max-width:1251px) {
+  .cta-area .inner h3 {
+    width: 463px;
+    margin: 0px auto;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 44px;
+    line-height: 120%;
+  }
+}
+@media only screen and (max-width:650px) {
+  .cta-area .inner h3 {
+    width: 320px;
+    font-size: 35px;
+    line-height: 110%;
+  }
 }
 .cta-area .inner a {
   font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
