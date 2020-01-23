@@ -211,6 +211,9 @@ body input[type=button]:hover {
   background-color: white;
   padding: 20px 20px;
 }
+.menu .menu-inner-mobile div {
+  cursor: pointer;
+}
 .menu .menu-inner-mobile .item-title {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 20px;
@@ -254,6 +257,7 @@ body input[type=button]:hover {
 }
 .menu .menu-inner .logo {
   width: 121px;
+  cursor: pointer;
 }
 .menu .menu-inner .logo img {
   max-width: 121px;
@@ -288,9 +292,9 @@ body input[type=button]:hover {
 }
 .menu .menu-inner .right .items .industry-pages {
   position: absolute;
-  width: 135px;
+  width: 170px;
   top: 25px;
-  left: -20px;
+  left: -30px;
   background-color: white;
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -326,13 +330,13 @@ body input[type=button]:hover {
   height: auto;
   text-align: center;
 }
-.menu .menu-inner .right .items div a {
+.menu .menu-inner .right .items div div {
   font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   color: #707689;
-  text-decoration: none;
+  cursor: pointer;
 }
-.menu .menu-inner .right .items div a:hover {
+.menu .menu-inner .right .items div div:hover {
   font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #303140;
 }
