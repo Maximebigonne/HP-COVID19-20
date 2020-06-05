@@ -1,0 +1,94 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.second{
+    section{
+
+        padding-top: 8rem;
+
+        #countdown{
+            padding: 20px 45px;
+            background-color: #1BC74E;
+            border-radius: 30px;
+
+            .inner{
+
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @media #{$desktop-xl} {
+                    flex-direction: column;
+                }
+            
+                @media #{$desktop} {
+                    
+                }
+            
+                @media #{$tablet} {
+                   
+                }
+
+                .left{
+                    span:nth-of-type(1){
+                        font-family: $website-font-bold;
+                        text-transform: uppercase;
+                        color: #FFFFFF;
+                        font-size: 34px;
+                        line-height: 120%;
+                        padding: 10px;
+                        background-color: black;
+                    }
+                    span:nth-of-type(2){
+                        font-size: 60px;
+                        line-height: 60px;
+                    }
+                    img{
+                        display: block;
+                        width: 33rem;
+                        padding-left: 1.2rem;
+                        margin-top: -0.6rem;
+
+                        @media #{$tablet} {
+                            width: 100%;
+                        }
+                    }
+
+                    @media #{$desktop-xl} {
+                        margin-bottom: 30px;
+                    }
+
+                }
+                .right{
+
+                    display: flex;
+                    align-items: center;
+
+                    @media #{$tablet} {
+                        flex-direction: column;
+                    }
+
+                    .bloc{
+                        text-align: center;
+                        margin: 0px 20px;
+
+                        .number{
+                            color: #FFFFFF;
+                            font-size: 8rem;
+                            line-height: 9.6rem;
+                            font-family: $website-font-bold;
+                            text-shadow: 5px 5px 0px #000000;
+                        }
+                        .word{
+                            font-family: $website-font;
+                            color: #000000;
+                            font-size: 30px;
+                            font-weight: 300;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

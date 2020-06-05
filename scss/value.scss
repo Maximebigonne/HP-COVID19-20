@@ -1,0 +1,169 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.value{
+
+    margin-bottom: 9rem;
+
+
+
+    .inner{
+        width: 100%;
+
+        .line{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            @media #{$desktop-xl} {
+                flex-direction: column;
+            }
+
+            .face{
+                width: 325px;
+
+                @media #{$desktop-xl} {
+                    margin-bottom: 45px;
+                    width: 50%;
+                }
+
+                @media #{$desktop} {
+                    margin-bottom: 45px;
+                    width: 80%;
+                }
+
+                @media #{$tablet} {
+                    margin-bottom: 45px;
+                    width: 100%;
+                }
+
+                h3{
+                    text-align: center;
+                    font-family: $website-font-semibold;
+                    color: #34393F;
+                    font-size: 25px;
+                    line-height: 30px;
+                    margin-bottom: 35px;
+                    
+                    @media #{$desktop-xl} {
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .cardo{
+                    height: 420px;
+                    width: 100%;
+                    box-shadow: 0px 25.4545px 50.9091px rgba(112, 118, 137, 0.15);
+                    border-radius: 11.6168px;
+                    cursor: pointer;
+                    padding-top: 115px;
+                    padding-bottom: 30px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                    background: #1BC74E;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
+                    color: white;
+                    justify-content: space-between;
+                    position: relative;
+
+                    h2{
+                        font-size: 85px;
+                        line-height: 68px;
+                        font-family: $website-font-bold;
+                    }
+
+                    p{
+                        font-size: 18px;
+                        line-height: 25px;
+                        font-family: $website-font;
+                    }
+
+                    span{
+                        font-size: 13px;
+                        line-height: 18px;
+                        font-family: $website-font;
+                    }
+
+                    .verso{
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+                        right: 0px;
+                        height: 100%;
+                        background-color: white;
+                        box-shadow: 0px 25.4545px 50.9091px rgba(112, 118, 137, 0.15);
+                        border-radius: 11.6168px;
+                        padding: 45px 30px 45px 30px;
+                        display: flex;
+                        flex-direction: column;
+                        
+                        justify-content: space-between;
+                        opacity: 1;
+                        transition: all 0.2s ease-in-out;
+
+                        @media #{$desktop-xl} {
+                            align-items: center;
+                        }
+
+                        .text{
+                            font-size: 15px;
+                            line-height: 21px;
+                            text-align: left;
+                            
+                            @media #{$desktop-xl} {
+                                text-align: center;
+                                width: 239.06px;
+                            }
+                        }
+
+                        img{
+
+                        }
+                    }
+
+                    .verso:nth-of-type(1){
+                        img{
+                            width: 239.06px;
+                        }
+                    }
+                    .verso:nth-of-type(2){
+                        img{
+                            width: 265.77px;
+                        }
+                    }
+                    .verso:nth-of-type(3){
+                        img{
+                            width: 275.29px;
+                        }
+                    }
+
+                    .verso:hover{
+                        opacity: 0;
+                        transition: all 0.2s ease-in-out;  
+                    }
+                }
+            }
+        }
+
+        a{
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            line-height: 1.8rem;
+            color: #1BC74E;
+            font-family: $website-font-semibold;
+            text-decoration: none;
+            justify-content: center;
+    
+            i{
+                margin-right: 1.7rem;
+            }
+        }
+
+    }
+}

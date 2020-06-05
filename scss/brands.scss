@@ -1,0 +1,230 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+
+.brands{
+    width: 100%;
+    padding-top: 10rem;
+    padding-bottom: 11rem;
+
+    .inner{
+        width: 120rem;
+        margin: 0px auto;
+
+        @media #{$desktop-xl} {
+            width: 80rem;
+        }
+
+        @media #{$tablet} {
+            width: 32rem;
+        } 
+    }
+
+    h2{
+        text-align: center;
+        font-family: $website-font-bold;
+        font-size: 4rem;
+        line-height: 5rem;
+        color: $main-black; 
+        width: 1049px;
+        margin: 0px auto;
+
+        @media #{$desktop-xl} {
+            width: 50rem;
+            margin: 0px auto;
+        }
+
+        @media #{$tablet} {
+            width: 32rem;
+            font-size: 3.5rem;
+            line-height: 3.9rem;
+        }
+        
+        @media #{$mobile} {
+            width: 29rem;
+        }
+    }
+
+    .logos{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 40px 0px;
+
+        @media #{$desktop-xl} {
+            width: 57.2rem;
+            margin: 40px auto 10px auto;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            img{
+                margin: 0px 15px 55px 15px;
+            }
+        }
+
+        @media #{$tablet} {
+            width: 32rem;
+            flex-direction: column;
+            margin: 40px 0px 20px 0px;
+
+            img{
+                margin-bottom: 55px;
+            }
+        } 
+    }
+
+    .logos-fr, .logos-en{
+        img:nth-of-type(1){
+            max-width: 110px;
+        }
+        img:nth-of-type(2){
+            max-width: 140px;
+        }
+        img:nth-of-type(3){
+            max-width: 106px;
+        }
+        img:nth-of-type(4){
+            max-width: 144px;
+        }
+        img:nth-of-type(5){
+            max-width: 173px;
+        }
+        img:nth-of-type(6){
+            max-width: 103px;
+        }
+
+        @media #{$tablet} {
+ 
+            img:nth-of-type(1){
+                max-width: 90px;
+            }
+            img:nth-of-type(2){
+                max-width: 120px;
+            }
+            img:nth-of-type(3){
+                max-width: 86px;
+            }
+            img:nth-of-type(4){
+                max-width: 124px;
+            }
+            img:nth-of-type(5){
+                max-width: 153px;
+            }
+            img:nth-of-type(6){
+                max-width: 83px;
+            }
+
+        } 
+    }
+
+    .logos-de{
+        img:nth-of-type(1){
+            max-width: 106.14px;
+        }
+        img:nth-of-type(2){
+            max-width: 133px;
+        }
+        img:nth-of-type(3){
+            max-width: 142.69px;
+        }
+        img:nth-of-type(4){
+            max-width: 82.47px;
+        }
+        img:nth-of-type(5){
+            max-width: 86px;
+        }
+        img:nth-of-type(6){
+            max-width: 111.17px;
+        }
+
+        @media #{$tablet} {
+ 
+            img:nth-of-type(1){
+                max-width: 96.14px;
+            }
+            img:nth-of-type(2){
+                max-width: 123px;
+            }
+            img:nth-of-type(3){
+                max-width: 132.69px;
+            }
+            img:nth-of-type(4){
+                max-width: 72.47px;
+            }
+            img:nth-of-type(5){
+                max-width: 76px;
+            }
+            img:nth-of-type(6){
+                max-width: 101.17px;
+            }
+            
+        } 
+    }
+
+    .logos-us{
+        img:nth-of-type(1){
+            max-width: 120px;
+        }
+        img:nth-of-type(2){
+            max-width: 120px;
+        }
+        img:nth-of-type(3){
+            max-width: 120px;
+        }
+        img:nth-of-type(4){
+            max-width: 120px;
+        }
+        img:nth-of-type(5){
+            max-width: 82.47px;
+        }
+        img:nth-of-type(6){
+            max-width: 120px;
+        }
+
+        @media #{$tablet} {
+ 
+            img:nth-of-type(1){
+                max-width: 110px;
+            }
+            img:nth-of-type(2){
+                max-width: 110px;
+            }
+            img:nth-of-type(3){
+                max-width: 110px;
+            }
+            img:nth-of-type(4){
+                max-width: 110px;
+            }
+            img:nth-of-type(5){
+                max-width: 72.47px;
+            }
+            img:nth-of-type(6){
+                max-width: 110px;
+            }
+            
+        } 
+    }
+
+    a{
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        color: #1BC74E;
+        font-family: $website-font-semibold;
+        text-decoration: none;
+        justify-content: center;
+
+        i{
+            margin-right: 1.7rem;
+            @media #{$mobile} {
+                display: none;
+            }
+        }
+
+        @media #{$mobile} {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+        }
+    }
+}

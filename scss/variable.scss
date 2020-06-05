@@ -1,50 +1,23 @@
 // COLORS
 
-$white:#ffffff;
-$main-color: #000000;
-$secondary-color:#1BC74E;
-$btn:#ff9600;
-$btn-hover:#f1c40f;
-$bg-grey:#f4f4f4;
-
-
-
-
-$green: #1BC74E;
-$bleu: #0099FF;
-$yellow: #FFD940;
-$black: #34393F;
-$grey: #707689;
-
-
-/*SECONDARY*/
-$greylight: #EAEEF2;
-$greenlight: #1BC74E;
-$bluelight: #E2F4FF;
-$yellowlight: #FFFBE9;
-$bluedark: #005DA4;
-$red: #FF4F5C;
+$main-black: #34393F; 
+$secondary-grey: #707689;
+$only-green: #1BC74E;
+$main-blue: #0099FF;
 
 // MEDIA QUERIES
 
-$desktop-xxl:  #{"only screen and (max-width:1351px)"};
-$desktop-inter:#{"only screen and (max-width:1251px)"};
-$desktop-xl:  #{"only screen and (max-width:1025px)"};
-$desktop:     #{"only screen and (max-width:991px)"};
-$tablet:      #{"only screen and (max-width:767px)"};
-$mobile:      #{"only screen and (max-width:650px)"};
-$highdensity: #{"only screen and (max-width:480px)"};
-$lowdensity: #{"only screen and (max-width:380px)"};
-$lastdensity: #{"only screen and (max-width:320px)"};
+$desktop-xl:    #{"only screen and (max-width:1366px)"};
+$desktop:       #{"only screen and (max-width:1024px)"};
+$tablet:        #{"only screen and (max-width:768px)"};
+$mobile:        #{"only screen and (max-width:330px)"};
 
 
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$website-font:      'proxima-regular', $sans-serif;
-$website-font-bold: 'proxima-bold', $sans-serif;
-$website-font-semibold: 'proxima-semibold', $sans-serif;
-$website-font-extrabold: 'proxima-extrabold', $sans-serif;
-$website-font-light:      'proxima-light', $sans-serif;
-$website-italic: 'proxima-regular-italic', $sans-serif;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 
 //FLEX
 @mixin dFlex(){

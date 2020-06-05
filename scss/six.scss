@@ -1,0 +1,325 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.six{
+    padding: 8rem 0rem;
+    section{
+
+        width: 130rem !important;
+
+        @media #{$desktop-xl} {
+            width: 83rem !important;
+        }
+    
+        @media #{$desktop} {
+            width: 54.5rem !important;
+            border: 3px solid blue;
+        }
+    
+        @media #{$tablet} {
+            width: 31.5rem !important;
+            border: 3px solid green;
+        }
+
+        .inner{
+
+            display: flex;
+            justify-content: space-between;
+
+            @media #{$desktop-xl} {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .left, .right{
+                width: 63rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                @media #{$tablet} {
+                    width: 100%;
+                }
+
+                .ticket{
+                    .top{
+                        width: 605px;
+                        background-color: #1BC74E;
+                        padding: 10px;
+                        border-radius: 20px;
+                        position: relative;
+
+                        @media #{$tablet} {
+                            width: 100%;
+                        }
+
+                        .round{
+                            position: absolute;
+                            top: calc(50% - 25px);
+                            left: -25px;
+                            height: 50px;
+                            width: 50px;
+                            background-color: white;
+                            border-radius: 100px;
+                        }
+
+                        .wave{
+                            position: absolute;
+                            width: 232px;
+                            bottom: -50px;
+                            left: -10px;
+
+                            @media #{$tablet} {
+                                display: none;
+                            }
+                        }
+
+
+                        .top-inner{
+                            border-radius: 15px;
+                            border: 2px solid rgba(0, 0, 0, 0.3);
+                            padding: 20px 30px 55px 60px;
+
+                            @media #{$tablet} {
+                                padding: 20px;
+                            }
+
+                            .day{
+                                font-size: 80px;
+                                font-family: $website-font-bold;
+                            }
+
+                            .date{
+                                display: inline-block;
+                                line-height: 1 !important;
+
+                                div{
+                                    font-family: $website-font;
+                                    font-size: 30px;
+                                    text-transform: uppercase;
+                                }
+
+                                .hour{
+                                    font-family: $website-italic;
+                                    font-size: 30px;
+                                }
+                            }
+
+                            .title{
+                                font-family: $website-font-bold;
+                                font-size: 34px;
+                                text-transform: uppercase;
+                                line-height: 41px;
+                                color: white;
+                                padding: 5px;
+                                background-color: black;
+                                margin-bottom: 30px;
+
+                                @media #{$tablet} {
+                                    font-size: 28px;
+                                    line-height: 35px;
+                                }
+                            }
+
+                            .logo{
+                                max-width: 137px;
+                                position: relative;
+                                
+                                .face{
+                                    max-width: 137px;
+                                }
+
+                                .description{
+                                    width: 492px;
+                                    background-color: white;
+                                    box-shadow: 10px 10px 0px #000000;
+                                    border-radius: 20px;
+                                    padding: 30px 35px 30px 30px;
+                                    position: absolute;
+                                    top: 50px;
+                                    left: -20px;
+
+                                    @media #{$tablet} {
+                                        width: 287px;
+                                        padding: 20px;
+                                    }
+        
+                                    .text{
+                                        font-size: 18px;
+                                        line-height: 25px;
+                                        font-family: $website-font;
+                                        margin-bottom: 25px;
+
+                                        @media #{$tablet} {
+                                            font-size: 15px;
+                                            line-height: 21px;
+                                        }
+                                    }
+        
+                                    .bottom{
+        
+                                        display: flex;
+                                        align-items: center;
+                                        position: relative;
+
+                                        .cta{
+                                            position: absolute;
+                                            bottom: -90px;
+                                            left: 110px;
+                                            padding: 20px 15px;
+                                            font-family: $website-font-semibold;
+                                            font-size: 24px;
+                                            box-shadow: 5px 5px 0px #000000;
+
+                                            @media #{$tablet} {
+                                                left: 35px;
+                                                bottom: -60px;
+                                                padding: 10px;
+                                                font-size: 18px;
+                                            }
+                                        }
+        
+                                        .speaker{
+                                            width: 81px;
+                                            margin-right: 20px;
+        
+                                            img{
+                                                width: 81px;
+                                            }
+                                        }
+        
+                                        .name{
+        
+                                            line-height: 1.1;
+        
+                                            .surname{
+                                                font-family: $website-font-bold;
+                                                font-size: 30px;
+                                            }
+        
+                                            .poste{
+        
+                                            }
+                                        }
+                                    }
+                                }
+
+                            }
+
+
+                        }
+                    }
+                }
+
+                .past{
+                    .top{
+                        background-color: rgba($color: #1BC74E, $alpha: 0.4);
+                    }
+
+                    .day, .date, .title{
+                        opacity: 0.4;
+                    }
+
+                    .logo{
+                        .face{
+                            opacity: 0.4;
+                        }
+                    }
+
+                    .description{
+                        .text{
+                            opacity: 0.4;
+                        }
+
+                        .name, .speaker{
+                            opacity: 0.4;
+                        }
+                    }
+                }
+
+                .ticket:nth-of-type(2), .ticket:nth-of-type(3){
+                    margin-top: 500px;
+
+                    @media #{$tablet} {
+                        margin-top: 600px;
+                    }
+                }
+
+                .cta-area{
+                    margin-top: 500px;
+                    padding: 95px 40px 40px 40px;
+                    background: #000000;
+                    border: 2px solid rgba(0, 0, 0, 0.3);
+                    box-sizing: border-box;
+                    border-radius: 20px;
+                    position: relative;
+                    width: 492px;
+
+                    @media #{$desktop-xl} {
+                        width: 90%;
+                        margin-bottom: 50px;
+                    }
+
+                    @media #{$tablet} {
+                        margin-bottom: 50px;
+                    }
+
+                    .icon{
+                        width: 244px;
+                        position: absolute;
+                        top: -50px;
+                        left: -50px;
+                    }
+
+                    .or{
+                        text-align: center;
+                        text-transform: uppercase;
+                        color: white;
+                        font-family: $website-font-bold;
+                        font-size: 25px;
+                        margin: 10px 0px 10px 0px;
+                    }
+
+                    .linkedin{
+                        text-decoration: none;
+                        color: white;
+                        font-size: 24px;
+                        line-height: 24px;
+                        display: flex;
+                        
+                        align-items: center;
+                        font-family: $website-font-bold;
+                        background: #006192;
+                        box-shadow: 5px 5px 0px #000000;
+                        border-radius: 10px;
+                        padding: 10px 15px;
+
+                        i{
+                            font-size: 40px;
+                            margin-right: 15px;
+                        }
+                    }
+                }
+            }
+
+            .left{
+
+                .ticket:nth-of-type(2){
+                    @media #{$tablet} {
+                        margin-bottom: 80px;
+                    }
+                }
+
+                .icon{
+                    width: 523px;
+                    margin-bottom: 125px;
+
+                    @media #{$desktop-xl} {
+                        width: 100%;
+                        margin-bottom: 85px;
+                    }
+                }
+            }
+        }
+    }
+}

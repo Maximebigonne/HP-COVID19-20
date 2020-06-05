@@ -11,503 +11,549 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/minireset-bis.min.css">
+
     <link rel="stylesheet" href="./css/style.css">
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
-    <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   
     <title></title>
+
+    <style>
+      .rido{
+        display: none;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+      }
+
+      .top{
+        top: 10px !important;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+      }
+    </style>
 
 </head>
 
   <body>
 
-    <div class="menu">
-        <div class="menu-inner">
-          <div class="logo" onclick="window.location.href='https://thirsty-hawking-278e16.netlify.com/'">
-            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Logo%20iadvize.png" alt="">
-          </div>
-          <div class="right">
-  
-            <div class="items">
-              <div>
-                <div id="solution-item" href="#">Solutions <i class="fas fa-caret-right"></i> </div>
-              </div>
-              <div>
-                <div onclick="window.location.href='https://pedantic-golick-d38bb6.netlify.com/'">Platform tour</div>
-              </div>
-              <div>
-                <div onclick="window.location.href='https://pedantic-golick-d38bb6.netlify.com/'">Vision</div>
-              </div>
-                <div id="submenu" class="industry-pages hide-menu">
-                    <div onclick="window.location.href='https://elated-fermi-9bc828.netlify.com/'">Consumer products</div>
-                    <div onclick="window.location.href='https://eager-keller-f2705c.netlify.com/'">Consumer services</div>
-                    <div onclick="window.location.href='https://thirsty-mayer-fa8247.netlify.com/'">Travel & Tourism</div>
-                </div>
-            </div>
-  
-            <div class="ctas">
-              <div class="login">
-                Log in
-              </div>
-              <div class="demo" data-toggle="modal" data-target="#contact">
-                Book a demo
-              </div>
-              <span class="navbar-toggle" id="js-navbar-toggle">
-                <i id="icon" class="fas fa-bars"></i>
-              </span>
-  
-            </div>
-          </div>
+    <div class="menu" id="menu">
+      <div class="menu-inner">
+        <div class="logo" onclick="window.location.href='https://www.iadvize.com/en'">
+          <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Logo%20iadvize%20(2).png" alt="">
         </div>
-  
-        <div id="menu-items" class="menu-inner-mobile">
-          <div class="item-title" onclick="window.location.href='https://thirsty-hawking-278e16.netlify.com/'">Home</div>
-          <div class="separator"></div>
-          <div class="item-title">Solutions</div>
-          <div class="item" onclick="window.location.href='https://elated-fermi-9bc828.netlify.com/'">Consumer products</div>
-          <div class="item" onclick="window.location.href='https://eager-keller-f2705c.netlify.com/'">Consumer services</div>
-          <div class="item" onclick="window.location.href='https://thirsty-mayer-fa8247.netlify.com/'">Travel & Tourism</div>
-          <div class="separator"></div>
-          <div class="item-title" onclick="window.location.href='https://pedantic-golick-d38bb6.netlify.com/'">Platform tour</div>
-          <div class="separator"></div>
-          <div class="item-title" onclick="window.location.href='https://pedantic-golick-d38bb6.netlify.com/'">Vision</div>
-        </div>
-
-    </div>
-
-    <section class="start">
-        <div class="inner">
-            <div class="pop-in">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/avatar-bis.png" alt="">
-                <div class="text-pop-in">
-                    <h3>Need help?</h3>
-                    <h2>An expert is available to answer you.</h2>
-                    <a href="#">Book a demo</a>
-                </div>
-            </div>
-            <div class="text">
-                <h3>iAdvize for the Consumer Products industry</h3>
-                <h2>Build a profitable customer-centric strategy</h2>
-            </div>
-            <div class="logos">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/samsung.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/backmarket.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/nespresso.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/cdiscount.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/fnac.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/conforama.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/decathlon.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <div class="journey">
-        <div class="inner">
-            <div class="text">
-                <div class="picto">
-                    👋
-                </div>
-                <h3>
-                    Discover the customer journey you can offer
-                </h3>
-
-                <ul class="nav" id="pills-tab" role="tablist">
-                    <li class="nav-item">
-                        <a href="#looking" class="nav-link active" data-toggle="pill" role="tab" aria-controls="looking" aria-selected="true">
-                            <div class="bulle"></div>
-                            <div class="text">
-                                Alex is looking for a new smart Ultra HD TV on the Samsung website.
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#analyse" class="nav-link" data-toggle="pill" role="tab" aria-controls="looking" aria-selected="true">
-                            <div class="bulle"></div>
-                            <div class="text">
-                                While Alex is browsing the website, his customer journey is analysed (visited pages, duration...) in order to assign him a score.
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#conseils" class="nav-link" data-toggle="pill" role="tab" aria-controls="looking" aria-selected="true">
-                            <div class="bulle"></div>
-                            <div class="text">
-                                This score enables us to direct Alex to the right ibbü expert, Dave, a technology enthusiast who works in IT during the day.
-                            </div>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#final" class="nav-link" data-toggle="pill" role="tab" aria-controls="looking" aria-selected="true">
-                            <div class="bulle"></div>
-                            <div class="text">
-                                Authentic conversations are also the most convincing ones.
-                            </div>
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-
-            <div class="container-visuel tab-content" id="pills-tabContent">
-                <img class="tab-pane show active" id="looking" role="tabpanel" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/step-1.png" alt="">
-                <img class="tab-pane show" id="analyse" role="tabpanel" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/step-2bis.png" alt="">
-                <img class="tab-pane show" id="conseils" role="tabpanel" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/step-3bis.png" alt="">
-                <img class="tab-pane show" id="final" role="tabpanel" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/step-final.png" alt="">
-            </div>
-
-        </div>
-    </div>
-
-    <section class="use-cases">
-
-        <h2 class="subtitle">
-            We help the Consumer Products industry address their key challenges
-        </h2>
-
-        <div class="inner">
-            <div class="card">
-                <div class="title">
-                    <h2>Increase online <br>direct-to-consumer sales</h2>
-                </div>
-                <div class="visuel">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/thekooples.png" alt="">
-                </div>
-                <div class="stat">
-                    31,5%
-                </div>
-                <div class="description">
-                    <span>of website visitors repurchase items </span>from The Kooples within 30 days, thanks to a superior online customer experience.
-                </div>
-                <a href="#">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt=""> Watch the interview
-                </a>
-            </div>
-            <div class="card">
-                <div class="title">
-                    <h2>Bridge<br>the online/offline gap</h2>
-                </div>
-                <div class="visuel">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/verbaudet.png" alt="">
-                </div>
-                <div class="stat">
-                    +25%
-                </div>
-                <div class="description">
-                    <span>increase in average order value </span>by recreating a personalised in-store experience online.
-                </div>
-                <a href="#">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt=""> Read the success story
-                </a>
-            </div>
-            <div class="card">
-                <div class="title">
-                    <h2>Develop a<br>web-to-store strategy</h2>
-                </div>
-                <div class="visuel">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/leroymerlin.png" alt="">
-                </div>
-                <div class="stat">
-                    +54%
-                </div>
-                <div class="description">
-                    <span>of website visitors have indicated they intend to purchase in-store </span>since the ibbü experts started handling conversations.
-                </div>
-                <a href="#">
-                    <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt=""> Read the success story
-                </a>
-            </div>
-
-
-        </div>
-    </section>
-
-    <div class="separator"></div>
-
-    <section class="community">
-
-        <h2>
-            With the right solutions
-        </h2>
-
-        <div class="inner">
-            <div class="container-visuel">
-                <div class="expert-line">
-                    <div class="expert-card">
-                        <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/top_amelie.png" alt="">
-                        <img class="logo" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/cdiscount.png" alt="">
-                        <div class="stat">
-                            <span>1,300</span>
-                            <p>
-                                visitors are advised each month on average
-                            </p>
-                        </div>
-                        <div class="expert-photo">
-                            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/amelie.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="expert-line">
-                    <div class="expert-card">
-                        <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/top_marion.png" alt="">
-                        <img class="logo" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/leroy.png" alt="">
-                        <div class="stat">
-                            <span>92.5%</span>
-                            <p>
-                                Customer satisfaction
-                            </p>
-                        </div>
-                        <div class="expert-photo">
-                            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/marion.png" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="expert-line">
-                    <div class="expert-card">
-                        <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/top_maxime.png" alt="">
-                        <img class="logo" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/mecha.png" alt="">
-                        <div class="stat">
-                            <span>37%</span>
-                            <p>
-                                Conversion rate
-                            </p>
-                        </div>
-                        <div class="expert-photo">
-                            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/maxime.png" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="text">
-                <div class="picto">
-                    🤗
-                </div>
-                <h3>
-                    An enthusiastic ibbü expert community
-                </h3>
-                <h4>
-                    ibbü experts can advise and convert your prospects, whilst delivering a human customer experience with 24/7 availability.
-                </h4>
-                <a href="#">
-                   <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt="">34% average conversion rate after a conversation 
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <div class="separator"></div>
-
-    <section class="messaging">
-        <div class="inner">
-
-            <div class="text">
-                <div class="picto">
-                    🔥
-                </div>
-                <h3>
-                    A powerful messaging platform
-                </h3>
-                <h4>
-                    with a behavourial targeting engine to engage the right customers when they need it
-                </h4>
-                <a href="#">
-                   <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt="">3,000 conversations handled each month by ibbü experts on the IKKS website</a>
-            </div>
-            <div class="container-visuel">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/visuel_messaging.png" alt="">
-            </div>
-
-        </div>
-    </section>
-
-    <div class="separator"></div>
-
-    <section class="analytics">
-        <div class="inner">
-            <div class="container-visuel fadeImg">
-                <div id="pic-1" class="illu"></div>
-                <div id="pic-2" class="illu" style="display: none;"></div>
-                <div id="pic-3" class="illu" style="display: none;"></div>
-            </div>
-            <div class="text">
-                <div class="picto">
-                    🔬
-                </div>
-                <h3>
-                    Comprehensive reporting
-                </h3>
-                <h4>
-                    data visualisation and conversational analysis to better understand your visitor expectations and boost customer satisfaction.
-                </h4>
-                <a href="#">
-                   <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/PRODUCT/arrow.png" alt="">+6 points in the quality of responses perceived by customers thanks to ibbü experts
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta-area">
-        <div class="inner">
-            <h3>Do you want to find out more about what our platform can offer?</h3>
-            
-            <a href="#">Book a demo</a>
-        </div>
-    </section>
-
-    <div class="footer">
-        <div class="inner">
+        <div class="right">
   
           <div class="items">
-            <div class="basic">
-              <img class="logo" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Logo%20iadvize.png" alt="">
-              <div class="contact">Contactez-nous</div>
-              <div class="numero">08 05 69 61 31</div>
-              <div class="social-n">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Vector.png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Vector%20(2).png" alt="">
-                <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/Vector%20(1).png" alt="">
+            <div class="element" id="solution">
+              Solutions
+            </div>
+            <div class="element" id="platform">
+              Platform tour
+            </div>
+            <div class="element" id="vision">
+              Vision
+            </div>  
+            <div class="element">
+              Plan de soutien
+            </div>  
+
+
+            <div id="sousmenu" class="submenu">
+              <div class="sitem">
+                <div class="title">Consumer products</div>
+                <div class="subtitle">Développez une stratégie rentable et centrée client</div>
               </div>
-              <img class="gartner" src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/HOMEPAGE/cool%20vendor%202016%201.png" alt="">
+              <div class="sitem">
+                <div class="title">Consumer products</div>
+                <div class="subtitle">Développez une stratégie rentable et centrée client</div>
+              </div>
+              <div class="sitem">
+                <div class="title">Consumer products</div>
+                <div class="subtitle">Développez une stratégie rentable et centrée client</div>
+              </div>
             </div>
-    
-            <div class="categorie">
-              <div class="title">Solutions</div>
-              <div class="item">Consumer products</div>
-              <div class="item">Consumer services</div>
-              <div class="item">Travel & Tourism</div>
-            </div>
-    
-            <div class="categorie">
-              <div class="title">Product</div>
-              <div class="item">[New] iAdvize Messenger</div>
-              <div class="item">Platform</div>
-              <div class="item">Demo</div>
-              <div class="item">Feature List</div>
-              <div class="item">ibbü</div>
-              <div class="item">Security & Privacy</div>
-            </div>
-    
-            <div class="categorie">
-              <div class="title">Ressources</div>
-              <div class="item">ibbü ?</div>
-              <div class="item">Conversation 2020</div>
-              <div class="item">Blog</div>
-              <div class="item">Glossaire</div>
-              <div class="item">Presse</div>
-              <div class="item">Help Center</div>
-              <div class="item">Contact us</div>
-            </div>
-    
-            <div class="categorie">
-              <div class="title">Entreprise</div>
-              <div class="item">Vision</div>
-              <div class="item">Join the Conversation</div>
-              <div class="item">Values</div>
-              <div class="item">Careers</div>
-            </div>
+
           </div>
+
+          
   
-          <div class="bottom">
-            <div class="left">
-              <div class="item">2010 - 2020 iAdvize</div>
-              <div class="item">SAS Tous droits réservés</div>
-              <div class="item">Conditions d'utilisations</div>
-              <div class="item">Mentions légales</div>
-              <div class="item">Vie privée</div>
+          <div class="ctas">
+            <div class="login" onclick="window.location.href='https://www.iadvize.com/admin/login/?lang=en'">
+              Log in
             </div>
+            <div class="demo" data-toggle="modal" data-target="#contact">
+              Book a demo
+            </div>
+            <div class="chat" data-toggle="modal" data-target="#contact">
+              Chat with us
+            </div>
+            <span class="navbar-toggle" id="js-navbar-toggle">
+              <i id="icon" class="fas fa-bars"></i>
+            </span>
   
-            <div class="right">
-              <div class="item">Language :</div>
-              <div class="item">🇫🇷</div>
-              <div class="item">🇬🇧</div>
-              <div class="item">🇩🇪</div>
-              <div class="item">🇺🇲</div>
-            </div>
           </div>
-  
+          
         </div>
+      </div>
+  
+      <div id="menu-items" class="menu-inner-mobile">
+        <div class="item-title" onclick="window.location.href='https://www.iadvize.com/en'">Home</div>
+        <div class="separator"></div>
+        <div class="item-title">Solutions</div>
+        <div class="item" onclick="window.location.href='https://www.iadvize.com/en/product-industry/'">Consumer products</div>
+        <div class="item" onclick="window.location.href='https://www.iadvize.com/en/services-industry/'">Consumer services</div>
+        <div class="item" onclick="window.location.href='https://www.iadvize.com/en/travel-industry/">Travel & Tourism</div>
+        <div class="separator"></div>
+        <div class="item-title" onclick="window.location.href='https://www.iadvize.com/en/platform-tour/'">Platform tour</div>
+        <div class="separator"></div>
+        <div class="item-title" onclick="window.location.href='https://www.iadvize.com/en/vision/'">Vision</div>
+      </div>
     </div>
 
+    <div class="tophead">
+
+      <div class="picture-area">
+        <img class="desktop" src="https://info.iadvize.com/hubfs/WEBSITE-COVID/bg.png"></img>
+        <img class="tablet" src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20546.png"></img>
+      </div>
+      
+
+      <div class="text">
+        <h2>uncertain times require</h2>
+        <h1>more than messaging</h1>
+        <p>The only flexible, cost-effective conversational platform that brings brands closer to their customers.</p>
+      </div>
+
+    </div>
+    <div class="tophead">
+
+      <div class="picture-area">
+        <img class="desktop" src="https://info.iadvize.com/hubfs/WEBSITE-COVID/bg.png"></img>
+        <img class="tablet" src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20546.png"></img>
+      </div>
+      
+
+      <div class="text">
+        <h2>uncertain times require</h2>
+        <h1>more than messaging</h1>
+        <p>La seule plateforme conversationnelle flexible et rentable qui rapproche les entreprises de leurs clients.</p>
+      </div>
+
+    </div>
+
+    <div class="topbar" id="topbar-planchot">
+      <div class="topbar-inner">
+        <div class="datas">
+          <div class="left">
+            <div class="trait"></div>
+            <div class="title">COVID-19</div>
+          </div>
+          <div class="center">
+            <div class="title">Analyses et tendances pour comprendre l'impact du Covid-19 sur l’expérience client
+            </div>
+            <div class="cta-topbar">Plus d'informations</div>
+          </div>
+          <div class="right" id="close-icon">
+            <i class="far fa-times-circle"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brands">
+      <div class="inner">
+        <h2>iAdvize helps more than 2,000+ brands across 100+ countries across the globe to overcome the challenges emerging during this unprecedented time</h2>
+          <div class="logos logos-en">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Oui%20sncf-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Loreal.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Tui-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Cdiscount%20(2).png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Airfrance-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Leroy%20Merlin%20(1).png" alt="">
+          </div>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Show me the customer success stories</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="brands">
+      <div class="inner">
+        <h2>Nous aidons plus de 2000 marques dans 100 pays dans le monde à relever les défis de cette période inédite</h2>
+          <div class="logos logos-en">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Oui%20sncf-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Loreal.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Tui-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Cdiscount%20(2).png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Airfrance-1.png" alt="">
+            <img src="https://cdn2.hubspot.net/hubfs/403167/WEBSITE-2020/TRAVEL/Leroy%20Merlin%20(1).png" alt="">
+          </div>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Consultez les témoignages de nos clients</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <section class="value">
+      <div class="inner">
+        <div class="line">
+          <div class="face">
+            <h3>Humanize the digital experience</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>+54%</h2>
+                <p>increase in conversations on our platform during the 1st week of the lockdown*</p>
+              </div>
+
+              <span>*3rd week of March 2020, Consumer products</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/Group%20604.png" alt="">
+                <div class="text">
+                  Maintain the human connection that bonds you with your customers through the communication channel adopted by more than 5 million users: Messaging. 
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="face">
+            <h3>Stay flexible in the face of uncertainty</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>24 hrs</h2>
+                <p>to deploy a conversational platform to assist more than 5 million visitors*</p>
+              </div>
+
+              <span>*iAdvize customer case study, March 2020</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20596.png" alt="">
+                <div class="text">
+                  Available remotely, iAdvize offers rapid deployment and evolves with your needs thanks, in great part, to solutions like ibbü, the community of on-demand experts helping your visitors 24/7.
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="face">
+            <h3>Respond to strict budgetary constraints</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>+20%</h2>
+                <p>increase in productivity while assisting visitors through messaging.*</p>
+              </div>
+
+              <span>*iAdvize customer case study, March 2020</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20596%20(1).png" alt="">
+                <div class="text">
+                  Messaging is the most economical form of communication for customer service. Improve productivity with our chatbot, or through our asynchronous experience functionality. 
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <i class="fas fa-arrow-right"></i>
+          <span>Discover how iAdvize can respond to your business' challenges</span>
+        </a>
+
+      </div>
+    </section>
+
+    <section class="value">
+      <div class="inner">
+        <div class="line">
+          <div class="face">
+            <h3>Offrez une expérience digitale toujours plus humaine</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>+54%</h2>
+                <p>de conversations sur notre plateforme la 1ère semaine du confinement*</p>
+              </div>
+
+              <span>*3e semaine de mars 2020, secteur Produits de consommation</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/Group%20604.png" alt="">
+                <div class="text">
+                  Avec iAdvize, conservez le lien humain qui vous unit à vos clients grâce au moyen de communication plébiscité par plus de 5 milliards d’utilisateurs : le messaging. 
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="face">
+            <h3>Restez flexible face à l’incertitude</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>24 hrs</h2>
+                <p>pour déployer une plateforme conversationnelle afin d’assister plus de 5 millions de visiteurs*</p>
+              </div>
+
+              <span>*cas client iAdvize, mars 2020</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20596.png" alt="">
+                <div class="text">
+                  Accessible à distance, iAdvize se déploie rapidement et évolue avec vos besoins grâce notamment à ibbü, la communauté à la demande pour conseiller vos visiteurs 24/7.
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="face">
+            <h3>Répondez à des contraintes budgétaires fortes</h3>
+            
+            <div class="cardo">
+
+              <div>
+                <h2>+20%</h2>
+                <p>de productivité en accompagnant les visiteurs par messaging*</p>
+              </div>
+
+              <span>*cas client iAdvize, mars 2020</span>
+
+              <div class="verso">
+                <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20596%20(1).png" alt="">
+                <div class="text">
+                  Gagnez en productivité grâce à notre chatbot ou à notre fonctionnalité asynchrone. Le messaging est le moyen de communication le plus économique en relation client.
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+
+        <a href="#">
+          <i class="fas fa-arrow-right"></i>
+          <span>Découvrez comment iAdvize peut répondre à vos enjeux</span>
+        </a>
+
+      </div>
+    </section>
+
+    <div class="platform">
+      <section>
+        <div class="inner">
+          <div class="left">
+            <h3>Un déploiement rapide et flexible</h3>
+            <h2>Découvrez<br>notre plateforme</h2>
+            <a href="#" class="a" href="#">Platform tour</a>
+          </div>
+
+          <div class="right">
+            <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Illustration-1.png" alt="">
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="content">
+      <h2>COVID-19 has disrupted the customer experience and the way brands are able to communicate with consumers.</h2>
+      <div class="box" id="alpha">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20599.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Benchmark, exclusive trends and figures on the impact of COVID-19 on our clients</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Discover our Trend Watch</span>
+          </a>
+        </div>
+      </div>
+      <div class="box" id="beta">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20595.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Flexible and without commitment to duration or volume - adapt to the uncertain economic climate</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Discover what iAdvize can do for you</span>
+          </a>
+        </div>
+      </div>
+      <div class="box" id="omega">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20605.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Our experts share our clients’ best practices in response to the crisis</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Watch our Webinars and videos of Customer Case Studies</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="content">
+      <h2>Le Covid-19 a bouleversé l’expérience client et la façon dont les marques peuvent converser avec les consommateurs.</h2>
+      <div class="box" id="alpha">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20599.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Benchmark et tendances chiffrées de l’impact du COVID-19 sur nos clients</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Retrouvez notre Observatoire des tendances</span>
+          </a>
+        </div>
+      </div>
+      <div class="box" id="beta">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20595.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Une offre flexible et sans engagement ni de durée, ni de volume, adaptée au climat d’incertitude</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Découvrez l’offre d’iAdvize</span>
+          </a>
+        </div>
+      </div>
+      <div class="box" id="omega">
+        <div class="left">
+          <img src="https://info.iadvize.com/hubfs/WEBSITE-2020/HOMEPAGE/Group%20605.png" alt="">
+        </div>
+        <div class="right">
+          <h3>Nos experts vous partagent les meilleures pratiques de nos clients pour répondre à cette crise</h3>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>
+            <span>Découvrez nos webinars et cas clients vidéo</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-bottom">
+      <section class="inner">
+        <div class="title">Would you like to discover the different solutions our platform has to offer?</div>
+        <div class="right">
+          <div class="btn">Just ask for a demo</div>
+          <div class="numero">
+            <h3>Contact us</h3>
+            <h4>+1 (617) 844 0982</h4>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="cta-bottom">
+      <section class="inner">
+        <div class="title">Vous souhaitez découvrir les solutions que notre plateforme peut vous apporter ?</div>
+        <div class="right">
+          <div class="btn">Demander une démo</div>
+          <div class="numero">
+            <h3>Contactez-nous</h3>
+            <h4>08 05 69 61 31</h4>
+          </div>
+        </div>
+      </section>
+    </div>
 
     <div class="modal fade" id="enterprise" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
 
               <div class="modal-header">
-                  <div class="modal-title" id="exampleModalLongTitle">Offre Enterprise</div>
                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                   </button>
               </div>
 
               <div class="modal-body">
-                  <script>
-                      hbspt.forms.create({
-                      portalId: "403167",
-                      formId: "d7a749a7-0af1-4e25-a9b9-3ce78a1689a9"
-                      });
-                  </script>
+                <div class="cui-embed" style="height: 230px; width: 100%;" data-cui-uid="l6qNlU" data-cui-avatar="https://images.typeform.com/images/RdwmMe53N6FW" data-cui-mode="widget" data-cui-pill-button-color="#0000FF"></div>
+                <script src="https://public-assets.typeform.com/confab/embed.js" async></script>
               </div>
 
             </div>
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
-
-    <script>
-        let mainNav = document.getElementById('menu-items');
-        let navBarToggle = document.getElementById('js-navbar-toggle');
-    
-        navBarToggle.addEventListener('click', function () {
-            mainNav.classList.toggle('active');
-            $('#icon').toggleClass("fa-bars fa-times");
-        })
-    </script>
-
-    <script>
-        let submenu = document.getElementById('submenu');
-        let solutionItem = document.getElementById('solution-item')
-
-        solutionItem.addEventListener('click', function () {
-            submenu.classList.toggle('hide-menu');
-            solutionItem.classList.toggle('hightlight');
-        })
-
-    </script>
-
-    <script type="text/javascript">
-        $next = 1;			// fixed, please do not modfy;
-        $current = 0;		// fixed, please do not modfy;
-        $interval = 2000;	// You can set single picture show time;
-        $fadeTime = 800;	// You can set fadeing-transition time;
-        $imgNum = 3;		// How many pictures do you have
-    
-        $(document).ready(function(){
-            //NOTE : Div Wrapper should with css: relative;
-            //NOTE : img should with css: absolute;
-            //NOTE : img Width & Height can change by you;
-            $('.fadeImg').css('position','relative');
-            $('.fadeImg .illu').css({'position':'absolute','width':'100%','height':'100%'});
-    
-            nextFadeIn();
-        });
-    
-        function nextFadeIn(){
-            //make image fade in and fade out at one time, without splash vsual;
-            $('.fadeImg .illu').eq($current).delay($interval).fadeOut($fadeTime)
-            .end().eq($next).delay($interval).hide().fadeIn($fadeTime, nextFadeIn);
-                
-            // if You have 5 images, then (eq) range is 0~4 
-            // so we should reset to 0 when value > 4; 
-            if($next < $imgNum-1){ $next++; } else { $next = 0;}
-            if($current < $imgNum-1){ $current++; } else { $current =0; }
-        };
-    </script>
-
     <script src="https://kit.fontawesome.com/4116d58311.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./js/script.js"></script>
+
+    <script>
+
+      let mainNav = document.getElementById('menu-items');
+      let navBarToggle = document.getElementById('js-navbar-toggle');
+  
+      navBarToggle.addEventListener('click', function () {
+          mainNav.classList.toggle('active');
+          $('#icon').toggleClass("fa-bars fa-times");
+      })
+
+    </script>
+
+    <script>
+
+      let menuItem = document.getElementById('solution');
+      let sousmenu = document.getElementById('sousmenu');
+
+      menuItem.addEventListener('mouseenter', function () {
+        sousmenu.classList.add('active');
+      })
+
+      menuItem.addEventListener('mouseover', function () {
+        sousmenu.classList.add('active');
+      })
+      
+
+      menuItem.addEventListener('mouseleave', function () {
+        if ($('#sousmenu:hover').length != 0) {
+          sousmenu.classList.add('active');
+        } else{
+          sousmenu.classList.remove('active');
+        }
+      })
+
+      sousmenu.addEventListener('mouseleave', function () {
+        sousmenu.classList.remove('active');
+      })
+
+    </script>
+
+    <script>
+      let closeIcon = document.getElementById('close-icon');
+      let topBar = document.getElementById('topbar-planchot');
+      let menu = document.getElementById('menu');
+
+      closeIcon.addEventListener('click', function () {
+        topBar.remove();
+        menu.classList.add('top');
+      })
+    </script>
 
   </body>
 

@@ -1,0 +1,113 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.second section {
+  padding-top: 8rem;
+}
+.second section #countdown {
+  padding: 20px 45px;
+  background-color: #1BC74E;
+  border-radius: 30px;
+}
+.second section #countdown .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width:1366px) {
+  .second section #countdown .inner {
+    flex-direction: column;
+  }
+}
+.second section #countdown .inner .left span:nth-of-type(1) {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 34px;
+  line-height: 120%;
+  padding: 10px;
+  background-color: black;
+}
+.second section #countdown .inner .left span:nth-of-type(2) {
+  font-size: 60px;
+  line-height: 60px;
+}
+.second section #countdown .inner .left img {
+  display: block;
+  width: 33rem;
+  padding-left: 1.2rem;
+  margin-top: -0.6rem;
+}
+@media only screen and (max-width:768px) {
+  .second section #countdown .inner .left img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:1366px) {
+  .second section #countdown .inner .left {
+    margin-bottom: 30px;
+  }
+}
+.second section #countdown .inner .right {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width:768px) {
+  .second section #countdown .inner .right {
+    flex-direction: column;
+  }
+}
+.second section #countdown .inner .right .bloc {
+  text-align: center;
+  margin: 0px 20px;
+}
+.second section #countdown .inner .right .bloc .number {
+  color: #FFFFFF;
+  font-size: 8rem;
+  line-height: 9.6rem;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-shadow: 5px 5px 0px #000000;
+}
+.second section #countdown .inner .right .bloc .word {
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+/*# sourceMappingURL=second.css.map */

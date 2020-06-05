@@ -1,0 +1,105 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.topbar {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(180deg, #1B74B1 0%, #268DCA 100%);
+  top: 0px;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width:1366px) {
+  .topbar {
+    display: none;
+  }
+}
+.topbar .topbar-inner {
+  width: 1000px;
+  margin: 0px auto;
+}
+.topbar .topbar-inner .datas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.topbar .topbar-inner .datas .left {
+  display: flex;
+  align-items: center;
+}
+.topbar .topbar-inner .datas .left .trait {
+  width: 25px;
+  margin-right: 7px;
+  border: 0.826087px solid #F5F6FA;
+}
+.topbar .topbar-inner .datas .left .title {
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #F5F6FA;
+}
+.topbar .topbar-inner .datas .center {
+  display: flex;
+  align-items: center;
+}
+.topbar .topbar-inner .datas .center .title {
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-style: 18px;
+  line-height: 23px;
+  color: #FFFFFF;
+  margin-right: 30px;
+}
+.topbar .topbar-inner .datas .center .cta-topbar {
+  font-family: "Open Sans";
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.005em;
+  color: #FFFFFF;
+  padding: 10px 15px;
+  border: 1.01804px solid #FFFFFF;
+  border-radius: 3px;
+  display: inline;
+  cursor: pointer;
+}
+.topbar .topbar-inner .datas .right i {
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=topbar.css.map */

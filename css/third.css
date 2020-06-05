@@ -1,0 +1,83 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+
+.third section {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+}
+.third section .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width:1366px) {
+  .third section .inner {
+    flex-direction: column;
+  }
+}
+.third section .inner .right {
+  width: 43.3rem;
+}
+.third section .inner .right img {
+  width: 43.3rem;
+}
+.third section .inner .left {
+  max-width: 620px;
+}
+@media only screen and (max-width:1366px) {
+  .third section .inner .left {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+.third section .inner .left h2 {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 34px;
+  line-height: 34px;
+  text-transform: uppercase;
+  max-width: 620px;
+  margin-bottom: 3rem;
+}
+.third section .inner .left p {
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+}
+
+/*# sourceMappingURL=third.css.map */

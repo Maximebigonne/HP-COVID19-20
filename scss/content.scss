@@ -1,0 +1,213 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.content{
+    .inner{
+        padding-top: 130px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        @media #{$desktop-xl} {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @media #{$desktop} {
+            padding-top: 100px;
+        }
+
+        .left{
+
+            max-width: 655px;
+
+            img{
+                border-radius: 8px;
+                margin-bottom: 40px;
+                width: 100%;
+            }
+
+            h3{
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 15px;
+
+                @media #{$tablet} {
+                    font-size: 13px;
+                    line-height: 18px;
+                }
+            }
+
+            h2{
+                font-size: 35px;
+                line-height: 42px;
+                margin-bottom: 15px;
+
+                @media #{$tablet} {
+                    font-size: 30px;
+                    line-height: 36px;
+                }
+            }
+
+            p{
+                font-size: 18px;
+                line-height: 25px;
+                margin-bottom: 15px;
+                max-width: 600px;
+
+                @media #{$tablet} {
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+
+            .cta{
+                padding: 12px 20px;
+                font-size: 15px;
+
+                @media #{$tablet} {
+                    font-size: 20px;
+                    padding: 20px 40px;
+                }
+            }
+
+            .cta:hover{
+                box-shadow: 0px 144.609px 144.609px rgba(112, 118, 137, 0.16), 0px 72.3046px 72.3046px rgba(112, 118, 137, 0.12), 0px 27.1142px 27.1142px rgba(112, 118, 137, 0.12), 0px 13.5571px 13.5571px rgba(112, 118, 137, 0.08);
+            }
+
+            @media #{$desktop-xl} {
+                margin-bottom: 50px;
+            }
+        }
+
+        .right{
+            width: 455px;
+
+            @media #{$desktop-xl} {
+                width: 655px;
+            }
+
+            @media #{$desktop} {
+                width: 100%;
+            }
+
+            .article{
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin-bottom: 45px;
+                cursor: pointer;
+                text-decoration: none;
+
+                @media #{$desktop-xl} {
+                    justify-content: flex-start;
+                }
+
+                @media #{$tablet} {
+                    
+                }
+
+                .img-inner{
+                    border-radius: 5px;
+                    width: 155px;
+                    height: 155px;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+
+                    @media #{$desktop-xl} {
+                        margin-right: 40px;
+                    }
+
+                    @media #{$tablet} {
+                        width: 100px;
+                        height: 100px;
+                        margin-right: 20px;
+                    }
+                }
+
+                .img-one{
+                    background-image: url('https://info.iadvize.com/hubfs/SALON-COVID19/Cover%20article%20(1).png');
+                }
+
+                .img-two{
+                    background-image: url('https://info.iadvize.com/hubfs/SALON-COVID19/Cover%20Article%20(4).png');
+                }
+
+                .img-three{
+                    background-image: url('https://cdn2.hubspot.net/hubfs/403167/SALON-COVID19/Cover%20article%20(3).png');
+                }
+
+                .text-inner{
+                    max-width: 260px;
+
+                    @media #{$tablet} {
+                        max-width: 200px;
+                    }
+                }
+
+                h3{
+                    font-size: 18px;
+                    line-height: 25px;
+                    margin-bottom: 15px;
+
+                    @media #{$tablet} {
+                        font-size: 13px;
+                        line-height: 18px;
+                        margin-bottom: 6px;
+                    }
+                }
+
+                h2{
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 15px;
+
+                    @media #{$tablet} {
+                        margin-bottom: 6px;
+                    }
+                }
+
+                .cta{
+                    font-size: 18px;
+                    line-height: 18px;
+                    letter-spacing: 0.005em;
+
+                    i{
+                        font-size: 13px;
+                    }
+                }
+            }
+
+            .article:hover{
+
+                .img-inner{
+                    box-shadow: 0px 144.609px 144.609px rgba(112, 118, 137, 0.16), 0px 72.3046px 72.3046px rgba(112, 118, 137, 0.12), 0px 27.1142px 27.1142px rgba(112, 118, 137, 0.12), 0px 13.5571px 13.5571px rgba(112, 118, 137, 0.08);
+                }
+
+                .text-inner{
+                    h3, h2, .link {
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .more{
+
+                @media #{$desktop-xl} {
+                    margin: 0px auto;
+                    display: table;
+                }
+                
+
+                i{
+                    font-size: 13px;
+                }
+                font-size: 18px;
+                line-height: 18px;
+                color: $secondary-grey !important;
+                text-decoration: none;
+            }
+        }
+    }
+}

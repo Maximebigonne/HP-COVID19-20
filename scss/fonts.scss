@@ -3,7 +3,6 @@
     src:    url('./../fonts/proximanova-light-webfont.woff') format('woff'),
             url('./../fonts/proximanova-light-webfont.woff') format('woff2');
 }
-
 @font-face {
     font-family: 'proxima-regular-italic';
     src:  url('./../fonts/proximanova-regitalic-webfont.woff2') format('woff2'),
@@ -12,7 +11,6 @@
     font-style: italic;
 
 }
-
 @font-face {
     font-family: 'proxima-regular';
     src:  url('./../fonts/proximanova-regular-webfont.woff2') format('woff2'),
@@ -21,7 +19,6 @@
     font-style: normal;
 
 }
-
 @font-face {
     font-family: 'proxima-semibold';
     src:  url('./../fonts/proximanova-semibold-webfont.woff2') format('woff2'),
@@ -29,7 +26,6 @@
     font-weight: bold;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'proxima-bold';
     src:  url('./../fonts/proximanova-bold.woff2') format('woff2'),
@@ -37,17 +33,15 @@
     font-weight: 900;
     font-style: normal;
 }
-
 @font-face {
     font-family: 'proxima-extrabold';
     src: url('./../fonts/proximaNova-Extrabold.woff') format('woff');
 }
 
-/*--------------------- FONTS ------------------------------------*/
-$sans-serif:        "Helvetica Neue", Helvetica, Arial, sans-serif;
-$website-font:      'proxima-regular', $sans-serif;
-$website-font-bold: 'proxima-bold', $sans-serif;
-$website-font-semibold: 'proxima-semibold', $sans-serif;
-$website-font-extrabold: 'proxima-extrabold', $sans-serif;
-$website-font-light:      'proxima-light', $sans-serif;
-$website-italic: 'proxima-regular-italic', $sans-serif;
+$sans-serif:                "Helvetica Neue", Helvetica, Arial, sans-serif;
+$website-font:              'proxima-regular', $sans-serif;
+$website-font-bold:         'proxima-bold', $sans-serif;
+$website-font-semibold:     'proxima-semibold', $sans-serif;
+$website-font-extrabold:    'proxima-extrabold', $sans-serif;
+$website-font-light:        'proxima-light', $sans-serif;
+$website-italic:            'proxima-regular-italic', $sans-serif;

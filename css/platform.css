@@ -1,0 +1,106 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.platform {
+  height: 700px;
+  background: #1F2024;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 135px;
+  margin-bottom: 9rem;
+}
+@media only screen and (max-width:1024px) {
+  .platform {
+    padding-bottom: 120px;
+    height: auto;
+  }
+}
+.platform .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width:1024px) {
+  .platform .inner {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .platform .inner .left {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+.platform .inner .left h3 {
+  color: white;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.platform .inner .left h2 {
+  color: white;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 65px;
+  line-height: 65px;
+  margin-bottom: 40px;
+}
+.platform .inner .left .a {
+  color: white;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.005em;
+  font-size: 20px;
+  line-height: 20px;
+  background: #0099FF;
+  border-radius: 5px;
+  padding: 20px 40px;
+  text-decoration: none;
+  transition: 0.2s;
+  display: inline-block;
+  cursor: pointer;
+}
+.platform .inner .left .a:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.platform .inner .right {
+  width: 614.48px;
+}
+.platform .inner .right img {
+  width: 614.48px;
+}
+
+/*# sourceMappingURL=platform.css.map */

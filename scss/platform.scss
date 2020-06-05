@@ -1,0 +1,78 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.platform{
+    height: 700px;
+    background: #1F2024;
+    border-radius: 20px 20px 0px 0px;
+    padding-top: 135px;
+    margin-bottom: 9rem;
+
+    @media #{$desktop} {
+        padding-bottom: 120px;
+        height: auto;
+    }
+    
+    .inner{
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center; 
+
+        @media #{$desktop} {
+            flex-direction: column;
+        }
+
+        .left{
+
+            @media #{$desktop} {
+                text-align: center;
+                margin-bottom: 60px;
+            }
+
+            h3{
+                color: white;
+                font-family: $website-font-semibold;
+                font-size: 20px;
+                line-height: 20px;
+                margin-bottom: 20px;
+            }
+
+            h2{
+                color: white;
+                font-family: $website-font-semibold;
+                font-size: 65px;
+                line-height: 65px;
+                margin-bottom: 40px;
+            }
+
+            .a{
+                color: white;
+                font-family: $website-font-semibold;
+                letter-spacing: 0.005em;
+                font-size: 20px;
+                line-height: 20px;
+                background: #0099FF;
+                border-radius: 5px;
+                padding: 20px 40px;
+                text-decoration: none;
+                transition: 0.2s;
+                display: inline-block;
+                cursor: pointer;
+            }
+
+            .a:hover{
+                transform: scale(1.05);
+                transition: 0.2s;
+            }
+        }
+
+        .right{
+            width: 614.48px;
+
+            img{
+                width: 614.48px;
+            }
+        }
+    }
+}

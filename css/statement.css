@@ -1,0 +1,185 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.statement .inner {
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width:1366px) {
+  .statement .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .statement .inner {
+    padding-top: 100px;
+  }
+}
+.statement .inner .left {
+  width: 436px;
+  height: 534px;
+  background-image: url("https://info.iadvize.com/hubfs/SALON-COVID19/Fond%20Image%20(3).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+  display: flex;
+  text-decoration: none;
+}
+@media only screen and (max-width:1366px) {
+  .statement .inner .left {
+    margin-bottom: 40px;
+    width: 560px;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .statement .inner .left {
+    width: 100%;
+  }
+}
+.statement .inner .left .text-inner {
+  width: 346px;
+  border-radius: 8px;
+  background: #FFFFFF;
+  box-shadow: 0px 144.609px 144.609px rgba(112, 118, 137, 0.16), 0px 72.3046px 72.3046px rgba(112, 118, 137, 0.12), 0px 27.1142px 27.1142px rgba(112, 118, 137, 0.12), 0px 13.5571px 13.5571px rgba(112, 118, 137, 0.08);
+  padding: 29px;
+  margin: auto;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .left .text-inner {
+    width: 300px;
+    padding: 20px;
+  }
+}
+.statement .inner .left .text-inner .emoji {
+  font-size: 30px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.statement .inner .left .text-inner p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+.statement .inner .left .text-inner p span {
+  color: #1BC74E;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .left .text-inner p {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+.statement .inner .left .text-inner .title {
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .left .text-inner .title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+.statement .inner .left .text-inner .link {
+  letter-spacing: 0.005em;
+}
+.statement .inner .left .text-inner .link i {
+  font-size: 12px;
+}
+.statement .inner .right {
+  width: 560px;
+}
+@media only screen and (max-width:1024px) {
+  .statement .inner .right {
+    width: 100%;
+  }
+}
+.statement .inner .right h2 {
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .right h2 {
+    font-size: 35px;
+    line-height: 42px;
+    max-width: 288px;
+  }
+}
+.statement .inner .right .item {
+  margin-bottom: 40px;
+}
+.statement .inner .right .item h3 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 5px;
+  display: flex;
+}
+.statement .inner .right .item h3 span {
+  margin-right: 10px;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .right .item h3 span {
+    margin-right: 0px;
+    margin-bottom: 5px;
+    display: block;
+  }
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .right .item h3 {
+    display: inline;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+.statement .inner .right .item p {
+  padding-left: 35px;
+  font-size: 15px;
+  line-height: 21px;
+  max-width: 460px;
+}
+@media only screen and (max-width:768px) {
+  .statement .inner .right .item p {
+    padding-left: 0px;
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+
+/*# sourceMappingURL=statement.css.map */

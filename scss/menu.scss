@@ -1,11 +1,19 @@
 @import "./variable.scss";
+@import "./fonts.scss";
+
 
 .menu{
 
     width: 100%;
     position: fixed;
-    top: 10px;
-    z-index: 999999;
+    top: 60px;
+    z-index: 120;
+    transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    
 
     @media #{$desktop-xl} {
         top: 0px;
@@ -13,12 +21,17 @@
 
     .active{
         display: block !important;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
     }
 
     .menu-inner-mobile{
         display: none;
         width: 100%;
-        height: auto;
+        height: 100vh;
         background-color: white;
         padding: 20px 20px;
 
@@ -28,7 +41,7 @@
 
         .item-title{
             font-family: $website-font-bold;
-            font-size: 20px;
+            font-size: 30px;
             color: #303140;
             margin-bottom: 3px;
             text-align: center;
@@ -36,11 +49,11 @@
         
         .item{
             font-family: $website-font;
-            font-size: 13px;
+            font-size: 25px;
             color: #707689;
             text-align: center;
             cursor: pointer;
-            margin-top: 5px;
+            margin-top: 30px;
         }
 
         .separator{
@@ -53,38 +66,66 @@
         }
     }
 
+    .menu-inner-final{
+        background-color: white !important;
+        box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.15) !important;
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+    }
 
+    .menu-inner:hover{
+        background-color: white !important;
+        box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.15) !important;
+        transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        -webkit-transition: all 0.3s ease-in-out;
+        -ms-transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
 
     .menu-inner{
-        width: 1000px;
+        width: 1200px;
+        
 
         @media #{$desktop-xl} {
             width: 100%;
             border-radius: 0px;
+            background-color: white;
+            box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.15) !important;
         } 
 
         height: auto;
-        padding: 10px 30px 10px 30px;
+        padding: 10px 20px 10px 20px;
         background-color: white;
         margin: 0px auto;
         display: flex;
         align-items: center;
         justify-content: space-between;
         border-radius: 10px 10px 10px 10px;
-        box-shadow: 0px 20px 40px rgba(112, 118, 137, 0.25);
-
+        
+        transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        -webkit-transition: all 0.5s ease-in-out;
+        -ms-transition: all 0.5s ease-in-out;
+    
         .logo{
             width: 121px;
             cursor: pointer;
+            margin-right: 90px;
 
             img{
                 max-width: 121px;
             }
 
             @media #{$desktop-xl} {
-                width: 80px;
+                width: 100px;
                 img{
-                    max-width: 80px;
+                    max-width: 100px;
                 }
             } 
         }
@@ -93,95 +134,142 @@
 
             display: flex;
             align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            
+
+            @media #{$desktop-xl} {
+                width: auto;
+            }
 
             .items{
-                display: flex;
-                align-items: center;
                 position: relative;
+                border: 2px solid transparent;
+                width: auto;
+                border: 2px solid transparent;
+                padding-top: 7px;
 
+                .submenu{
+                    display: none;
+                    position: absolute;
+                    left: -117px;
+                    bottom: -364px;
+                    padding: 40px;
+                    background: #FFFFFF;
+                    box-shadow: 0px 30px 40px rgba(112, 118, 137, 0.15);
+                    border-radius: 5px;
+                    transition: all 0.3s ease-in-out;
+                    -moz-transition: all 0.3s ease-in-out;
+                    -o-transition: all 0.3s ease-in-out;
+                    -webkit-transition: all 0.3s ease-in-out;
+                    -ms-transition: all 0.3s ease-in-out;
+
+                    .sitem{
+                        width: 230px;
+                        padding: 15px 20px 15px 20px;
+                        background: #FFFFFF;
+                        transition: all 0.3s ease-in-out;
+                        border-radius: 3px;
+                        cursor: pointer;
+
+                        .title{
+                            font-family: $website-font-semibold;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 21px;
+                            color: #34393F;
+                            margin-bottom: 5px;
+                        }
+
+                        .subtitle{
+                            font-family: $website-font;
+                            font-weight: normal;
+                            font-size: 11px;
+                            line-height: 15px;
+                            color: #707689;
+                        }
+                    }
+
+                    .sitem:hover{
+                        box-shadow: 0px 5px 20px rgba(112, 118, 137, 0.15);
+                        transition: all 0.3s ease-in-out;
+                    }
+
+                    .sitem:nth-of-type(2){
+                        margin: 10px 0px 10px 0px;
+                    }
+                }
+
+                
                 .hide-menu{
                     display: none !important;
                 }
 
                 .hightlight{
-                    font-family: $website-font-bold;
+                    font-family: $website-font-semibold;
                     color: #303140;
-
-                    i{
-                        transform: rotate(90deg);
-                        transition: 0.2s;
-                    }
-
                 }
 
-                .industry-pages{
-                    position: absolute;
-                    width: 170px;
-                    top: 25px;
-                    left: -30px;
-                    background-color: white;
-                    font-family: $website-font;
-                    font-size: 13px;
-                    color: #707689;
-                    text-decoration: none;
-                    display: flex;
-                    flex-direction: column;
-                    padding-top: 10px;
-                    padding-bottom: 0px;
-                    border-radius: 10px;
-
-                    div{
-                        width: 100% !important;
-                        margin-bottom: 10px;
-                        cursor: pointer;
-                    }
-
-                    div:hover{
-                        font-family: $website-font-bold;
-                        color: #303140;
-                    }
-                }
                 
                 @media #{$desktop-xl} {
                     display: none;
                 }
                 
-                div:nth-of-type(1){
-                    a{
-                        i{
-                            font-size: 13px;
-                            padding-left: 0px;
-                            transition: 0.2s;
-                        }
-                    }                    
-                }
 
-                div{ 
-                    width: 100px;
-                    height: auto;
+                .element{ 
+                    display: inline;
                     text-align: center;
-
-                    div{
-                        font-family: $website-font;
-                        font-size: 15px;
-                        color: #707689;
-                        cursor: pointer;
-                    }
-
-                    div:hover{
-                        font-family: $website-font-bold;
-                        color: #303140;
-                    }
+                    font-family: $website-font-semibold;
+                    font-weight: 600;
+                    font-size: 15px;
+                    color: #34393F;
+                    cursor: pointer;
+                    line-height: 21px;
+                    padding-bottom: 8px;
+                    position: relative;
                 }
+
+                .element:after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    height: 2px;
+                    width: 0%;
+                    background-color: #1BC74E;
+                    transition: all 0.3s ease-in-out;
+                }
+
+                .element:hover:after{
+                        width: 100%;
+                        transition: all 0.3s ease-in-out;
+                }
+
+                #solution{
+                    margin-right: 65px;
+                }
+
+                #platform{
+                    margin-right: 65px;
+                }
+
+                #vision{
+                    margin-right: 65px;
+                }
+
             }
 
             .ctas{
 
                 display: flex;
                 align-items: center;
+                margin-left: 50px;
 
+                @media #{$tablet} {
+                    margin-left: 0px;
+                } 
 
-                .login, .demo{
+                .login, .demo, .chat{
                     cursor: pointer;
                 }
 
@@ -207,6 +295,11 @@
                 }
 
                 .demo:hover{
+                    transform: scale(1.05);
+                    transition: 0.2s;
+                }
+
+                .chat:hover{
                     transform: scale(1.05);
                     transition: 0.2s;
                 }
@@ -242,8 +335,31 @@
                     justify-content: center;
                     border-radius: 5px;
                     cursor: pointer;
-                    padding: 15px 30px;
+                    text-align: center;
+                    padding: 15px;
                     transition: 0.2s;
+                    margin-right: 17px;
+                }
+
+                .chat{
+                    background: #34393F;
+                    border: 1px solid #34393F;
+                    font-size: 13.4079px;
+                    color: white;
+                    font-family: $website-font;
+                    letter-spacing: 0.005em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    text-align: center;
+                    padding: 15px;
+                    transition: 0.2s;
+
+                    @media #{$desktop} {
+                        display: none;
+                    } 
                 }
 
             }

@@ -1,0 +1,125 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.tophead{
+    width: 100%;
+    position: relative;
+    height: 98.3rem;
+
+    @media #{$tablet} {
+        height: 570px;
+    }
+
+    @media #{$mobile} {
+        height: 530px;
+    }
+
+
+    .picture-area{
+        width: 151rem;
+        margin: 0px auto;
+        position: absolute;
+        left: 50%;
+        top: -8rem;
+        margin-left: -75.5rem;
+        
+    
+        @media #{$tablet} {
+            margin-left: 0px;
+            left: 0px;
+            top: 18rem;
+            width: 100%;
+        }
+
+        @media #{$mobile} {
+            top: 18rem;
+        }
+
+        .desktop{
+            width: 151rem;
+
+            @media #{$tablet} {
+                display: none;
+            }
+        }
+
+        .tablet{
+            display: none;
+            
+            @media #{$tablet} {
+                width: 100%;
+                display: block;
+            }
+        }
+    }
+
+    .text{
+        text-align: center;
+        color: $main-black; 
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        padding-top: 16.6rem;
+
+        @media #{$tablet} {
+            padding-top: 11rem;
+        }
+
+        @media #{$mobile} {
+            padding-top: 11rem;
+        }
+    
+        h2{
+            font-family: $website-font-bold;
+            font-size: 5.7rem;
+            line-height: 8.2rem;
+
+            @media #{$tablet} {
+                font-size: 30px;
+                line-height: 42px;
+            }
+
+            @media #{$mobile} {
+                font-size: 2.7rem;
+                line-height: 3rem;
+            }
+        }
+
+        h1{
+            font-family: $website-font-bold;
+            font-size: 8.9rem;
+            line-height: 7.1rem;
+            margin-bottom: 14px;
+
+            @media #{$tablet} {
+                font-size: 6.5rem;
+                line-height: 5.1rem;
+                
+            }
+
+            @media #{$mobile} {
+                font-size: 5.5rem;
+                line-height: 5.4rem;
+            }
+        }
+
+        p{
+            font-family: $website-font;
+            font-size: 2.2rem;
+            max-width: 53.6rem;
+            margin: 0px auto;
+            line-height: 3.1rem;
+
+            @media #{$tablet} {
+                font-size: 1.8rem;
+                line-height: 2.5rem;
+                max-width: 33rem;
+            }
+
+            @media #{$mobile} {
+                max-width: 28rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.value {
+  margin-bottom: 9rem;
+}
+.value .inner {
+  width: 100%;
+}
+.value .inner .line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width:1366px) {
+  .value .inner .line {
+    flex-direction: column;
+  }
+}
+.value .inner .line .face {
+  width: 325px;
+}
+@media only screen and (max-width:1366px) {
+  .value .inner .line .face {
+    margin-bottom: 45px;
+    width: 50%;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .value .inner .line .face {
+    margin-bottom: 45px;
+    width: 80%;
+  }
+}
+@media only screen and (max-width:768px) {
+  .value .inner .line .face {
+    margin-bottom: 45px;
+    width: 100%;
+  }
+}
+.value .inner .line .face h3 {
+  text-align: center;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #34393F;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 35px;
+}
+@media only screen and (max-width:1366px) {
+  .value .inner .line .face h3 {
+    margin-bottom: 25px;
+  }
+}
+.value .inner .line .face .cardo {
+  height: 420px;
+  width: 100%;
+  box-shadow: 0px 25.4545px 50.9091px rgba(112, 118, 137, 0.15);
+  border-radius: 11.6168px;
+  cursor: pointer;
+  padding-top: 115px;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background: #1BC74E;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+  justify-content: space-between;
+  position: relative;
+}
+.value .inner .line .face .cardo h2 {
+  font-size: 85px;
+  line-height: 68px;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.value .inner .line .face .cardo p {
+  font-size: 18px;
+  line-height: 25px;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.value .inner .line .face .cardo span {
+  font-size: 13px;
+  line-height: 18px;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.value .inner .line .face .cardo .verso {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 0px 25.4545px 50.9091px rgba(112, 118, 137, 0.15);
+  border-radius: 11.6168px;
+  padding: 45px 30px 45px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+@media only screen and (max-width:1366px) {
+  .value .inner .line .face .cardo .verso {
+    align-items: center;
+  }
+}
+.value .inner .line .face .cardo .verso .text {
+  font-size: 15px;
+  line-height: 21px;
+  text-align: left;
+}
+@media only screen and (max-width:1366px) {
+  .value .inner .line .face .cardo .verso .text {
+    text-align: center;
+    width: 239.06px;
+  }
+}
+.value .inner .line .face .cardo .verso:nth-of-type(1) img {
+  width: 239.06px;
+}
+.value .inner .line .face .cardo .verso:nth-of-type(2) img {
+  width: 265.77px;
+}
+.value .inner .line .face .cardo .verso:nth-of-type(3) img {
+  width: 275.29px;
+}
+.value .inner .line .face .cardo .verso:hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.value .inner a {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #1BC74E;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  justify-content: center;
+}
+.value .inner a i {
+  margin-right: 1.7rem;
+}
+
+/*# sourceMappingURL=value.css.map */

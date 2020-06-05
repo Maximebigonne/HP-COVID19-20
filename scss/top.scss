@@ -1,0 +1,30 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.first{
+    section{
+        
+        padding-top: 3rem;
+
+        @media #{$tablet} {
+            width: 100% !important;
+        }
+
+        img{
+            width: 115rem;
+
+            @media #{$desktop-xl} {
+                width: 83rem;
+            }
+        
+            @media #{$desktop} {
+                width: 54.5rem;
+            }
+        
+            @media #{$tablet} {
+                width: 100%;
+            }
+
+        }
+    }
+}

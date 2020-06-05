@@ -1,0 +1,230 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.content .inner {
+  padding-top: 130px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+@media only screen and (max-width:1366px) {
+  .content .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .content .inner {
+    padding-top: 100px;
+  }
+}
+.content .inner .left {
+  max-width: 655px;
+}
+.content .inner .left img {
+  border-radius: 8px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+.content .inner .left h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .left h3 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+.content .inner .left h2 {
+  font-size: 35px;
+  line-height: 42px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .left h2 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+.content .inner .left p {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+  max-width: 600px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .left p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+.content .inner .left .cta {
+  padding: 12px 20px;
+  font-size: 15px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .left .cta {
+    font-size: 20px;
+    padding: 20px 40px;
+  }
+}
+.content .inner .left .cta:hover {
+  box-shadow: 0px 144.609px 144.609px rgba(112, 118, 137, 0.16), 0px 72.3046px 72.3046px rgba(112, 118, 137, 0.12), 0px 27.1142px 27.1142px rgba(112, 118, 137, 0.12), 0px 13.5571px 13.5571px rgba(112, 118, 137, 0.08);
+}
+@media only screen and (max-width:1366px) {
+  .content .inner .left {
+    margin-bottom: 50px;
+  }
+}
+.content .inner .right {
+  width: 455px;
+}
+@media only screen and (max-width:1366px) {
+  .content .inner .right {
+    width: 655px;
+  }
+}
+@media only screen and (max-width:1024px) {
+  .content .inner .right {
+    width: 100%;
+  }
+}
+.content .inner .right .article {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 45px;
+  cursor: pointer;
+  text-decoration: none;
+}
+@media only screen and (max-width:1366px) {
+  .content .inner .right .article {
+    justify-content: flex-start;
+  }
+}
+.content .inner .right .article .img-inner {
+  border-radius: 5px;
+  width: 155px;
+  height: 155px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width:1366px) {
+  .content .inner .right .article .img-inner {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .content .inner .right .article .img-inner {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+  }
+}
+.content .inner .right .article .img-one {
+  background-image: url("https://info.iadvize.com/hubfs/SALON-COVID19/Cover%20article%20(1).png");
+}
+.content .inner .right .article .img-two {
+  background-image: url("https://info.iadvize.com/hubfs/SALON-COVID19/Cover%20Article%20(4).png");
+}
+.content .inner .right .article .img-three {
+  background-image: url("https://cdn2.hubspot.net/hubfs/403167/SALON-COVID19/Cover%20article%20(3).png");
+}
+.content .inner .right .article .text-inner {
+  max-width: 260px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .right .article .text-inner {
+    max-width: 200px;
+  }
+}
+.content .inner .right .article h3 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .right .article h3 {
+    font-size: 13px;
+    line-height: 18px;
+    margin-bottom: 6px;
+  }
+}
+.content .inner .right .article h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width:768px) {
+  .content .inner .right .article h2 {
+    margin-bottom: 6px;
+  }
+}
+.content .inner .right .article .cta {
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0.005em;
+}
+.content .inner .right .article .cta i {
+  font-size: 13px;
+}
+.content .inner .right .article:hover .img-inner {
+  box-shadow: 0px 144.609px 144.609px rgba(112, 118, 137, 0.16), 0px 72.3046px 72.3046px rgba(112, 118, 137, 0.12), 0px 27.1142px 27.1142px rgba(112, 118, 137, 0.12), 0px 13.5571px 13.5571px rgba(112, 118, 137, 0.08);
+}
+.content .inner .right .article:hover .text-inner h3, .content .inner .right .article:hover .text-inner h2, .content .inner .right .article:hover .text-inner .link {
+  text-decoration: underline;
+}
+.content .inner .right .more {
+  font-size: 18px;
+  line-height: 18px;
+  color: #707689 !important;
+  text-decoration: none;
+}
+@media only screen and (max-width:1366px) {
+  .content .inner .right .more {
+    margin: 0px auto;
+    display: table;
+  }
+}
+.content .inner .right .more i {
+  font-size: 13px;
+}
+
+/*# sourceMappingURL=content.css.map */

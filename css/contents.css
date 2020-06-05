@@ -1,0 +1,189 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.content {
+  height: 930px;
+  position: relative;
+}
+@media only screen and (max-width:1366px) {
+  .content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.content h2 {
+  width: 688px;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  line-height: 48px;
+  margin-left: 18px;
+}
+@media only screen and (max-width:1366px) {
+  .content h2 {
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 25px;
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+.content .box {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 17.8747px 35.7493px rgba(112, 118, 137, 0.2);
+  border-radius: 8.93733px;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+@media only screen and (max-width:1366px) {
+  .content .box {
+    position: static;
+    margin-bottom: 30px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .content .box {
+    flex-direction: column;
+  }
+}
+.content .box .left {
+  border-radius: 4.84655px;
+}
+@media only screen and (max-width:768px) {
+  .content .box .left {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:768px) {
+  .content .box .right {
+    width: 100%;
+  }
+}
+.content .box .right h3 {
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #34393F;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.content .box .right a {
+  color: #1BC74E;
+  letter-spacing: 0.005em;
+  font-size: 18px;
+  line-height: 18px;
+}
+.content .box .right a i {
+  font-size: 10px;
+}
+.content .box:hover {
+  transform: translateY(-10px);
+  transition: 0.2s;
+}
+.content #alpha {
+  left: 18px;
+  top: 285px;
+  flex-direction: column;
+}
+.content #alpha .left {
+  width: 247.31px;
+  height: 151.48px;
+  margin-bottom: 30px;
+}
+.content #alpha .left img {
+  width: 100%;
+}
+.content #alpha .right {
+  width: 407px;
+}
+@media only screen and (max-width:768px) {
+  .content #alpha .right {
+    width: 100%;
+  }
+}
+.content #beta {
+  right: 36px;
+  top: 191px;
+}
+.content #beta .left {
+  width: 134.95px;
+  height: 177.13px;
+  margin-right: 37px;
+}
+@media only screen and (max-width:768px) {
+  .content #beta .left {
+    margin-right: 0px;
+  }
+}
+.content #beta .left img {
+  width: 100%;
+}
+.content #beta .right {
+  width: 316px;
+}
+@media only screen and (max-width:768px) {
+  .content #beta .right {
+    width: 100%;
+  }
+}
+.content #omega {
+  left: 570px;
+  top: 512px;
+  flex-direction: column;
+}
+.content #omega .left {
+  width: 300px;
+  height: 140px;
+  margin-bottom: 30px;
+}
+.content #omega .left img {
+  width: 100%;
+}
+.content #omega .right {
+  width: 403px;
+}
+@media only screen and (max-width:768px) {
+  .content #omega .right {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=contents.css.map */

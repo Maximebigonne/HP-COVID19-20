@@ -1,0 +1,66 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+:root {
+    font-size: 62.5%;
+    
+    body {
+        margin: 0;
+        font-size: 1.6rem;
+    }
+}
+
+
+section{
+    width: 115rem;
+    margin: 0px auto;
+
+    @include transition-width(linear, 0.5s);
+
+    @media #{$desktop-xl} {
+        width: 83rem;
+    }
+
+    @media #{$desktop} {
+        width: 54.5rem;
+    }
+
+    @media #{$tablet} {
+        width: 31.5rem;
+    }
+
+}
+
+.title{
+    color: $main-black;
+    font-family: $website-font-bold;
+}
+
+.subtitle{
+    color: $main-black;
+    font-family: $website-font-semibold;
+}
+
+.text{
+    color: $secondary-grey;
+    font-family: $website-font;
+}
+
+.link{
+    color: $only-green !important;
+    font-family: $website-font-semibold;
+}
+
+.cta{
+    color: white !important;
+    font-family: 'Open Sans';
+    background-color: $only-green;
+    display: inline-block;
+    border-radius: 5px;
+    text-decoration: none !important;
+}
+
+.modal-backdrop {
+    background: #242424 !important;
+    opacity: 1 !important;
+ }

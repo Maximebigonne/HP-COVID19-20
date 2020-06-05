@@ -1,0 +1,101 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.cta-bottom {
+  width: 100%;
+  background-color: #1BC74E;
+  padding: 10rem 12rem;
+  margin-top: 13rem;
+}
+@media only screen and (max-width:1366px) {
+  .cta-bottom {
+    padding: 10rem 5rem;
+  }
+}
+.cta-bottom .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media only screen and (max-width:1366px) {
+  .cta-bottom .inner {
+    flex-direction: column;
+  }
+}
+.cta-bottom .inner .title {
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: white;
+  font-size: 4.5rem;
+  line-height: 5.4rem;
+  max-width: 62.7rem;
+}
+@media only screen and (max-width:1366px) {
+  .cta-bottom .inner .title {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.cta-bottom .inner .right {
+  text-align: center;
+}
+.cta-bottom .inner .right .btn {
+  cursor: pointer;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  background-color: white;
+  padding: 2rem 4rem;
+  margin-bottom: 5rem;
+  transition: 0.2s;
+}
+.cta-bottom .inner .right .btn:hover {
+  transform: scale(1.05);
+  transition: 0.2s;
+}
+.cta-bottom .inner .right .numero {
+  color: white;
+}
+.cta-bottom .inner .right .numero h3 {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6rem;
+}
+.cta-bottom .inner .right .numero h4 {
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*# sourceMappingURL=last-cta.css.map */

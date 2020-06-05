@@ -1,0 +1,103 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+:root {
+  font-size: 62.5%;
+}
+:root body {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+section {
+  width: 115rem;
+  margin: 0px auto;
+  -moz-transition: width 0.5s linear;
+  -o-transition: width 0.5s linear;
+  -webkit-transition: width 0.5s linear;
+}
+@media only screen and (max-width:1366px) {
+  section {
+    width: 83rem;
+  }
+}
+@media only screen and (max-width:1024px) {
+  section {
+    width: 54.5rem;
+  }
+}
+@media only screen and (max-width:768px) {
+  section {
+    width: 31.5rem;
+  }
+}
+
+.title {
+  color: #34393F;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.subtitle {
+  color: #34393F;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.text {
+  color: #707689;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.link {
+  color: #1BC74E !important;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.cta {
+  color: white !important;
+  font-family: "Open Sans";
+  background-color: #1BC74E;
+  display: inline-block;
+  border-radius: 5px;
+  text-decoration: none !important;
+}
+
+.modal-backdrop {
+  background: #242424 !important;
+  opacity: 1 !important;
+}
+
+/*# sourceMappingURL=base.css.map */

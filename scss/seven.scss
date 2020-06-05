@@ -1,0 +1,111 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.seventh{
+    margin-top: 300px;
+    background-color: #1BC74E;
+    height: 312px;
+    padding-top: 104px;
+
+    @media #{$tablet} {
+        padding-top: 200px;
+    }
+
+    section{
+        background: #FFFFFF;
+        border-radius: 30px;
+        box-shadow: 10px 10px 0px #000000;
+        padding: 90px 140px;
+        position: relative;
+
+        @media #{$desktop-xl} {
+            padding: 60px 100px;
+        }
+
+        @media #{$tablet} {
+            padding: 20px 10px 20px 10px;
+        }
+
+        .wave-left{
+            position: absolute;
+            width: 203.49px;
+            top: -50px;
+            left: -50px;
+
+            @media #{$desktop} {
+                z-index: -1;
+            }
+        }
+
+        .wave-right{
+            position: absolute;
+            width: 135px;
+            bottom: -50px;
+            right: -50px;
+            z-index: -1;
+        }
+
+        .inner{
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @media #{$desktop-xl} {
+                flex-direction: column;
+            }
+
+            .right{
+
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 20px 40px;
+                    background-color: #1BC74E;
+                    font-family: $website-font-semibold;
+                    border-radius: 5px;
+                    font-size: 20px;
+    
+                }
+
+                .contact{
+                    margin-top: 55px;
+                    text-align: center;
+
+                    .text{
+                        font-family: $website-font-bold;
+                        font-size: 18px;
+                    }
+
+                    span{
+
+                    }
+                }
+                
+            }
+
+            .left{
+
+                max-width: 430px;
+
+                @media #{$desktop-xl} {
+                    max-width: 100%;
+                    text-align: center;
+                    margin-bottom: 50px;
+                }
+
+                .title{
+                    font-size: 34px;
+                    line-height: 34px;
+                    text-transform: uppercase;
+                    margin-bottom: 10px;
+                }
+
+                .text{
+                    font-size: 18px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+}

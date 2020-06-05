@@ -1,0 +1,155 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.fourth {
+  background-color: #FFCD40;
+}
+.fourth section {
+  padding: 8rem 0rem;
+}
+@media only screen and (max-width:1366px) {
+  .fourth section {
+    padding: 8rem 0rem 2rem 0rem;
+  }
+}
+.fourth section .inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width:1366px) {
+  .fourth section .inner {
+    border: 2px solid black;
+  }
+}
+.fourth section .inner .bottom {
+  display: flex;
+  align-items: center;
+}
+@media only screen and (max-width:1366px) {
+  .fourth section .inner .bottom {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+.fourth section .inner .bottom .blok {
+  width: 227px;
+  height: 284px;
+  border-radius: 20px;
+  background-color: white;
+  text-align: center;
+  display: inline-block;
+  margin: 0px 10px;
+}
+@media only screen and (max-width:1366px) {
+  .fourth section .inner .bottom .blok {
+    margin-bottom: 80px;
+  }
+}
+.fourth section .inner .bottom .blok .emoji {
+  font-size: 60px;
+  margin-top: -40px;
+  margin-bottom: -20px;
+}
+.fourth section .inner .bottom .blok .day {
+  font-size: 80px;
+  line-height: 96px;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.fourth section .inner .bottom .blok .month {
+  font-size: 30px;
+  line-height: 36px;
+  font-family: "proxima-regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+.fourth section .inner .bottom .blok .logo {
+  margin-bottom: 25px;
+}
+.fourth section .inner .bottom .blok .logo img {
+  max-width: 137px;
+}
+.fourth section .inner .bottom .blok .btn {
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background: #1BC74E;
+  box-shadow: 5px 5px 0px #000000;
+  border-radius: 10px;
+  color: white;
+  padding: 20px 30px;
+}
+.fourth section .inner .bottom .past {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.fourth section .inner .bottom .past .emoji {
+  opacity: 0;
+}
+.fourth section .inner .bottom .past .logo {
+  opacity: 0.4;
+}
+.fourth section .inner .bottom .past .day, .fourth section .inner .bottom .past .month {
+  color: rgba(0, 0, 0, 0.4);
+}
+.fourth section .inner .bottom .comming .emoji {
+  opacity: 0;
+}
+.fourth section .inner .top {
+  display: inline-block;
+  margin-bottom: 60px;
+}
+.fourth section .inner .top span:nth-of-type(1) {
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  font-size: 34px;
+  line-height: 120%;
+  padding: 10px;
+  background-color: black;
+}
+.fourth section .inner .top span:nth-of-type(2) {
+  font-size: 60px;
+  line-height: 60px;
+}
+.fourth section .inner .top img {
+  display: block;
+  width: 33rem;
+  padding-left: 1.2rem;
+  margin-top: -0.6rem;
+}
+
+/*# sourceMappingURL=fourth.css.map */

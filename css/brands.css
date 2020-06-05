@@ -1,0 +1,250 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: "proxima-light";
+  src: url("./../fonts/proximanova-light-webfont.woff") format("woff"), url("./../fonts/proximanova-light-webfont.woff") format("woff2");
+}
+@font-face {
+  font-family: "proxima-regular-italic";
+  src: url("./../fonts/proximanova-regitalic-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regitalic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+@font-face {
+  font-family: "proxima-regular";
+  src: url("./../fonts/proximanova-regular-webfont.woff2") format("woff2"), url("./../fonts/proximanova-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-semibold";
+  src: url("./../fonts/proximanova-semibold-webfont.woff2") format("woff2"), url("./../fonts/proximanova-semibold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-bold";
+  src: url("./../fonts/proximanova-bold.woff2") format("woff2"), url("./../fonts/proximanova-bold.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "proxima-extrabold";
+  src: url("./../fonts/proximaNova-Extrabold.woff") format("woff");
+}
+.brands {
+  width: 100%;
+  padding-top: 10rem;
+  padding-bottom: 11rem;
+}
+.brands .inner {
+  width: 120rem;
+  margin: 0px auto;
+}
+@media only screen and (max-width:1366px) {
+  .brands .inner {
+    width: 80rem;
+  }
+}
+@media only screen and (max-width:768px) {
+  .brands .inner {
+    width: 32rem;
+  }
+}
+.brands h2 {
+  text-align: center;
+  font-family: "proxima-bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 4rem;
+  line-height: 5rem;
+  color: #34393F;
+  width: 1049px;
+  margin: 0px auto;
+}
+@media only screen and (max-width:1366px) {
+  .brands h2 {
+    width: 50rem;
+    margin: 0px auto;
+  }
+}
+@media only screen and (max-width:768px) {
+  .brands h2 {
+    width: 32rem;
+    font-size: 3.5rem;
+    line-height: 3.9rem;
+  }
+}
+@media only screen and (max-width:330px) {
+  .brands h2 {
+    width: 29rem;
+  }
+}
+.brands .logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+@media only screen and (max-width:1366px) {
+  .brands .logos {
+    width: 57.2rem;
+    margin: 40px auto 10px auto;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .brands .logos img {
+    margin: 0px 15px 55px 15px;
+  }
+}
+@media only screen and (max-width:768px) {
+  .brands .logos {
+    width: 32rem;
+    flex-direction: column;
+    margin: 40px 0px 20px 0px;
+  }
+  .brands .logos img {
+    margin-bottom: 55px;
+  }
+}
+.brands .logos-fr img:nth-of-type(1), .brands .logos-en img:nth-of-type(1) {
+  max-width: 110px;
+}
+.brands .logos-fr img:nth-of-type(2), .brands .logos-en img:nth-of-type(2) {
+  max-width: 140px;
+}
+.brands .logos-fr img:nth-of-type(3), .brands .logos-en img:nth-of-type(3) {
+  max-width: 106px;
+}
+.brands .logos-fr img:nth-of-type(4), .brands .logos-en img:nth-of-type(4) {
+  max-width: 144px;
+}
+.brands .logos-fr img:nth-of-type(5), .brands .logos-en img:nth-of-type(5) {
+  max-width: 173px;
+}
+.brands .logos-fr img:nth-of-type(6), .brands .logos-en img:nth-of-type(6) {
+  max-width: 103px;
+}
+@media only screen and (max-width:768px) {
+  .brands .logos-fr img:nth-of-type(1), .brands .logos-en img:nth-of-type(1) {
+    max-width: 90px;
+  }
+  .brands .logos-fr img:nth-of-type(2), .brands .logos-en img:nth-of-type(2) {
+    max-width: 120px;
+  }
+  .brands .logos-fr img:nth-of-type(3), .brands .logos-en img:nth-of-type(3) {
+    max-width: 86px;
+  }
+  .brands .logos-fr img:nth-of-type(4), .brands .logos-en img:nth-of-type(4) {
+    max-width: 124px;
+  }
+  .brands .logos-fr img:nth-of-type(5), .brands .logos-en img:nth-of-type(5) {
+    max-width: 153px;
+  }
+  .brands .logos-fr img:nth-of-type(6), .brands .logos-en img:nth-of-type(6) {
+    max-width: 83px;
+  }
+}
+.brands .logos-de img:nth-of-type(1) {
+  max-width: 106.14px;
+}
+.brands .logos-de img:nth-of-type(2) {
+  max-width: 133px;
+}
+.brands .logos-de img:nth-of-type(3) {
+  max-width: 142.69px;
+}
+.brands .logos-de img:nth-of-type(4) {
+  max-width: 82.47px;
+}
+.brands .logos-de img:nth-of-type(5) {
+  max-width: 86px;
+}
+.brands .logos-de img:nth-of-type(6) {
+  max-width: 111.17px;
+}
+@media only screen and (max-width:768px) {
+  .brands .logos-de img:nth-of-type(1) {
+    max-width: 96.14px;
+  }
+  .brands .logos-de img:nth-of-type(2) {
+    max-width: 123px;
+  }
+  .brands .logos-de img:nth-of-type(3) {
+    max-width: 132.69px;
+  }
+  .brands .logos-de img:nth-of-type(4) {
+    max-width: 72.47px;
+  }
+  .brands .logos-de img:nth-of-type(5) {
+    max-width: 76px;
+  }
+  .brands .logos-de img:nth-of-type(6) {
+    max-width: 101.17px;
+  }
+}
+.brands .logos-us img:nth-of-type(1) {
+  max-width: 120px;
+}
+.brands .logos-us img:nth-of-type(2) {
+  max-width: 120px;
+}
+.brands .logos-us img:nth-of-type(3) {
+  max-width: 120px;
+}
+.brands .logos-us img:nth-of-type(4) {
+  max-width: 120px;
+}
+.brands .logos-us img:nth-of-type(5) {
+  max-width: 82.47px;
+}
+.brands .logos-us img:nth-of-type(6) {
+  max-width: 120px;
+}
+@media only screen and (max-width:768px) {
+  .brands .logos-us img:nth-of-type(1) {
+    max-width: 110px;
+  }
+  .brands .logos-us img:nth-of-type(2) {
+    max-width: 110px;
+  }
+  .brands .logos-us img:nth-of-type(3) {
+    max-width: 110px;
+  }
+  .brands .logos-us img:nth-of-type(4) {
+    max-width: 110px;
+  }
+  .brands .logos-us img:nth-of-type(5) {
+    max-width: 72.47px;
+  }
+  .brands .logos-us img:nth-of-type(6) {
+    max-width: 110px;
+  }
+}
+.brands a {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  color: #1BC74E;
+  font-family: "proxima-semibold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-decoration: none;
+  justify-content: center;
+}
+.brands a i {
+  margin-right: 1.7rem;
+}
+@media only screen and (max-width:330px) {
+  .brands a i {
+    display: none;
+  }
+}
+@media only screen and (max-width:330px) {
+  .brands a {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*# sourceMappingURL=brands.css.map */

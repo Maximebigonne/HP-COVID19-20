@@ -1,0 +1,77 @@
+@import "./variable.scss";
+@import "./fonts.scss";
+
+.topbar{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(180deg, #1B74B1 0%, #268DCA 100%);
+    top: 0px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media #{$desktop-xl} {
+        display: none;
+    }
+
+    .topbar-inner{
+        width: 1000px;
+        margin: 0px auto;
+
+        .datas{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left{
+                display: flex;
+                align-items: center;
+
+                .trait{
+                    width: 25px;
+                    margin-right: 7px;
+                    border: 0.826087px solid #F5F6FA;
+                }
+                .title{
+                    font-family: $website-font;
+                    font-size: 13px;
+                    line-height: 18px;
+                    color: #F5F6FA;
+                }
+            }
+            .center{
+
+                display: flex;
+                align-items: center;
+
+                .title{
+                    font-family: $website-font;
+                    font-style: 18px;
+                    line-height: 23px;
+                    color: #FFFFFF;
+                    margin-right: 30px;
+                }
+
+                .cta-topbar{
+                    font-family: 'Open Sans';
+                    font-size: 12px;
+                    line-height: 12px;
+                    letter-spacing: 0.005em;
+                    color: #FFFFFF;
+                    padding: 10px 15px;
+                    border: 1.01804px solid #FFFFFF;
+                    border-radius: 3px;
+                    display: inline;
+                    cursor: pointer;
+                }
+            }
+            .right{
+                i{
+                    color: #FFFFFF;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
